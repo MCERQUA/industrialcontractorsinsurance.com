@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: SITE.description,
   keywords: [
     "dairy farm insurance",
-    "dairy insurance",
+    "industrial contractor insurance",
     "dairy cattle mortality insurance",
     "livestock mortality insurance",
     "dairy farm property insurance",

@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${SITE.url}/locations/${slug}`;
   return {
     title: `${SITE.name} — ${loc.name}`,
-    description: `${loc.blurb} Livestock mortality, workers' comp, farm property, equipment & spoilage, and pollution for ${loc.name} dairy farms. 15-minute quotes.`,
+    description: `${loc.intro} Livestock mortality, workers' comp, farm property, equipment & spoilage, and pollution for ${loc.name} industrial contracting farms. 15-minute quotes.`,
     alternates: { canonical: url },
-    openGraph: { title: `${SITE.name} — ${loc.name} | Contractors Choice Agency`, description: loc.blurb, url },
+    openGraph: { title: `${SITE.name} — ${loc.name} | Contractors Choice Agency`, description: loc.intro, url },
   };
 }
 
@@ -50,7 +50,7 @@ export default async function LocationPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "InsuranceService",
     name: `${SITE.name} — ${loc.name}`,
-    description: loc.blurb,
+    description: loc.intro,
     url,
     areaServed: { "@type": "Place", name: loc.name },
     provider: { "@type": "InsuranceAgency", name: SITE.name, url: SITE.url, telephone: "+18449675247" },
@@ -80,7 +80,7 @@ export default async function LocationPage({ params }: Props) {
                   {SITE.name} —{" "}
                   <span className="bg-gradient-to-r from-clay via-clay-light to-gold-dark bg-clip-text text-transparent">{loc.name}</span>
                 </h1>
-                <p className="mt-5 lead max-w-2xl">{loc.blurb}</p>
+                <p className="mt-5 lead max-w-2xl">{loc.intro}</p>
                 <div className="mt-7 flex flex-col sm:flex-row gap-3">
                   <Link href="/quote" className="btn-primary">Get a {loc.name} quote<ArrowRight className="h-5 w-5" /></Link>
                   <a href={SITE.phoneHref} className="btn-secondary"><Phone className="h-5 w-5" />{SITE.phone}</a>
@@ -89,7 +89,7 @@ export default async function LocationPage({ params }: Props) {
 
               <FadeIn direction="left" className="lg:col-span-5">
                 <div className="rounded-t-[10rem] rounded-b-3xl overflow-hidden border-4 border-white shadow-warm-lg">
-                  <img src="/images/coverage.jpg" alt={`Dairy farm in ${loc.name}`} className="w-full h-[300px] md:h-[360px] object-cover" loading="lazy" />
+                  <img src="/images/coverage.jpg" alt={`Industrial Contracting farm in ${loc.name}`} className="w-full h-[300px] md:h-[360px] object-cover" loading="lazy" />
                 </div>
               </FadeIn>
             </div>
@@ -100,8 +100,8 @@ export default async function LocationPage({ params }: Props) {
           <div className="container-tight">
             <FadeIn className="max-w-2xl mb-10">
               <span className="eyebrow"><span className="h-px w-8 bg-clay" />Coverage for {loc.name} dairies</span>
-              <h2 className="mt-3 h-section">The full program, built for {loc.name} dairy farms.</h2>
-              <p className="mt-4 lead">From a family operation to a multi-site production group, we coordinate every line a {loc.name} dairy needs.</p>
+              <h2 className="mt-3 h-section">The full program, built for {loc.name} industrial contracting farms.</h2>
+              <p className="mt-4 lead">From a family operation to a multi-site production group, we coordinate every line a {loc.name} industrial contracting needs.</p>
             </FadeIn>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {SERVICES.slice(0, 4).map((s, i) => (
@@ -117,9 +117,9 @@ export default async function LocationPage({ params }: Props) {
           </div>
         </section>
 
-        <FAQ items={locFaqs} eyebrow={`${loc.name} — FAQ`} title={<>Dairy insurance questions for <span className="text-clay">{loc.name}</span></>} background="sand" />
+        <FAQ items={locFaqs} eyebrow={`${loc.name} — FAQ`} title={<>Industrial Contracting insurance questions for <span className="text-clay">{loc.name}</span></>} background="sand" />
 
-        <CTABand title={`Insuring dairy farms in ${loc.name} since 2005`} description={`Local knowledge, A-rated markets, and 15-minute quotes. Call ${SITE.phone} or request a quote online.`} />
+        <CTABand title={`Insuring industrial contracting farms in ${loc.name} since 2005`} description={`Local knowledge, A-rated markets, and 15-minute quotes. Call ${SITE.phone} or request a quote online.`} />
       </main>
       <Footer />
     </>

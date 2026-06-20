@@ -9,15 +9,13 @@ import { FadeIn } from "@/components/animations/FadeIn";
 import { SERVICES, SITE } from "@/lib/site";
 import { SERVICE_DETAIL, GENERAL_FAQS, COPY } from "@/lib/content";
 import {
-  ShieldCheck, HardHat, FlaskConical, Truck, Wrench, FileCheck,
-  Building2, Umbrella, PackageCheck, Factory, Gauge, Boxes,
+  ShieldCheck, FileSignature, HardHat, Truck, Umbrella, Droplets, Wrench, Building2,
   CheckCircle2, ArrowRight, ArrowLeft, Users, Target,
-  Milk, Droplets,
-} from "lucide-react";
+  ChevronDown,
+} from "lucide-react";;
 
 const ICONS = {
-  ShieldCheck, HardHat, FlaskConical, Truck, Wrench, FileCheck, Building2, Umbrella,
-  PackageCheck, Factory, Gauge, Boxes, Milk, Droplets,
+  ShieldCheck, FileSignature, HardHat, Truck, Umbrella, Droplets, Wrench, Building2,
 } as const;
 
 export function generateStaticParams() {
@@ -34,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${service.title} ${COPY.serviceDetail.h1Suffix}`,
     description: service.description,
-    keywords: service.keywords ? [...service.keywords] : undefined,
+    keywords: undefined,
     alternates: { canonical: url },
     openGraph: { title: `${service.title} ${COPY.serviceDetail.h1Suffix} | Contractors Choice Agency`, description: service.description, url },
   };
@@ -45,7 +43,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) notFound();
 
-  const detail = SERVICE_DETAIL[slug];
+  const detail = SERVICE_DETAIL[slug as keyof typeof SERVICE_DETAIL];
   const Icon = ICONS[service.icon as keyof typeof ICONS] ?? ShieldCheck;
   const url = `${SITE.url}/services/${slug}`;
   const related = SERVICES.filter((s) => s.slug !== slug).slice(0, 3);

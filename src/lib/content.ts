@@ -1,239 +1,296 @@
-// Rich, niche-accurate content blocks + centralized COPY for Dairy Insurance.
-
 import {
-  PhoneCall, FileSearch, FileSignature, ShieldCheck,
-  Building2, Truck, HardHat, Package, Droplets, Milk,
+  PhoneCall,
+  FileSearch,
+  FileSignature,
+  ShieldCheck,
+  Wrench,
+  HardHat,
+  Droplets,
+  Truck,
+  Umbrella,
+  Building2,
+  Award,
+  Handshake,
 } from "lucide-react";
 
-/* ============================================================
-   COPY — centralized display strings consumed by components/pages.
-   ============================================================ */
 export const COPY = {
   hero: {
-    h1Lead: "Dairy farm insurance that protects",
-    h1Highlight: "the herd, the milk, and the operation",
+    h1Lead: "Heavy Industrial Contractor",
+    h1Highlight: "Insurance",
     subcopy:
-      "Livestock mortality, milking-parlor and barn property, equipment breakdown with milk spoilage, dairy product liability, manure-runoff pollution, workers' comp, and milk-tanker auto — purpose-built for dairy operations. A-rated carriers. 15-minute quotes.",
-    statValue: "240+",
-    statLabel: "Dairy operations insured — herds, parlors, creameries, and family dairies",
-    imageAlt: "Dairy farm at dawn — milking herd in pasture with barn and parlor",
+      "Specialty insurance for mechanical, electrical, civil, and process contractors working in refineries, chemical plants, power plants, and major industrial facilities. GL, workers comp, professional liability, and high-limit umbrella — built for the demands of heavy industrial project work.",
+    imageAlt: "Heavy industrial contractor crew working on major industrial facility project",
+    statValue: "500+",
+    statLabel: "Industrial contractors insured nationwide",
   },
-  nav: { ariaLabel: "Dairy Insurance home" },
+  nav: { ariaLabel: "Industrial Contractors Insurance navigation" },
   footer: {
-    ctaTitle: "Ready to protect your dairy operation?",
-    ctaSubcopy: "15-minute quotes. 2-hour claims response. Insurance for dairy farms and dairy operations nationwide.",
+    ctaTitle: "Get a Heavy Industrial Contractor Insurance Quote",
+    ctaSubcopy:
+      "Refineries, chemical plants, power plants — we write programs for heavy industrial contractors. 15-minute quotes, A+ carriers, high-limit umbrella capacity.",
     description:
-      "Specialized insurance for dairy farms and dairy operations — livestock mortality, farm property, equipment breakdown and milk spoilage, dairy product liability, manure-runoff pollution, workers' comp, and commercial auto. A division of Contractors Choice Agency — founded 2005, licensed all 50 states.",
+      "Specialty insurance for heavy industrial contractors. General liability, professional liability, workers compensation, commercial auto, CPL, and umbrella for mechanical, electrical, civil, and process contractors.",
   },
   servicesGrid: {
-    h2Lead: "Coverage built specifically for",
-    h2Highlight: "dairy farms",
-    lead: "Standard farm policies undervalue registered stock, exclude milk spoilage, and miss the manure-runoff exposure. We build programs designed for working dairies.",
+    eyebrow: "Coverage for heavy industrial work",
+    h2Lead: "Industrial Contractors Insurance",
+    h2Highlight: "Coverage Lines",
+    lead: "From general liability and workers compensation to professional liability and high-limit umbrella — full programs for heavy industrial contractors on major projects.",
+    featuredSlug: "general-liability",
+    featuredBadge: "Core coverage",
   },
   why: {
-    eyebrow: "Why dairies switch to us",
-    h2Lead: "The coverage gaps that",
-    h2Highlight: "cost dairy farms the most",
-    lead: "Most agents hand a dairy a generic farm-owner policy and call it done. Then a barn fire, a bulk-tank failure, or a manure-runoff claim hits and the exclusion kicks in. We underwrite the parts of your operation everyone else leaves out.",
-    sidebarTitle: "Run by people who know agriculture",
+    eyebrow: "The CCA difference",
+    h2Lead: "Why Industrial Contractors",
+    h2Highlight: "Choose CCA",
+    lead: "Heavy industrial contracting requires more than standard contractor insurance — high-limit umbrella, pollution liability for industrial environments, and professional liability for design-build work.",
+    sidebarTitle: "Heavy Industrial Specialists",
     sidebarBody:
-      "Contractors Choice Agency was founded in 2005 by people from the trades and the land. We've walked parlors, valued registered stock, and know what a milking system or bulk tank costs to replace.",
+      "We understand heavy industrial contractor operations — the liability requirements of facility owners, the workers comp risks of operating in industrial environments, and the professional liability exposure of process and mechanical design-build work.",
   },
   coverage: {
-    eyebrow: "Where we write",
-    h2Lead: "Dairy farm coverage.",
-    h2Highlight: "All 50 states.",
-    lead: "From Wisconsin and California to the Northeast creameries and Southwest desert dairies, Contractors Choice Agency writes dairy insurance in every state where dairy operations run.",
-    imageAlt: "Dairy farm landscape with milking herd, barns, and parlor — national dairy coverage",
-    badgeTitle: "National coverage for dairy operations.",
-    badgeSub: "Writing dairy programs in all 50 states since 2005.",
+    eyebrow: "Comprehensive industrial contractor protection",
+    h2Lead: "Full-Spectrum Coverage for",
+    h2Highlight: "Heavy Industrial Contractors",
+    lead: "Industrial contracting in operating facilities creates GL, pollution, professional, and workers compensation exposures that generic contractor programs don't address. We build programs that do.",
+    imageAlt: "Heavy industrial contractor crew on major refinery or chemical plant project",
+    badgeTitle: "Licensed all 50 states",
+    badgeSub: "Writing industrial contractor programs nationwide",
   },
   process: {
-    lead: "No two-week back-and-forth. A real conversation, real markets, and a program you can actually understand — built around your herd and operation.",
+    lead: "Getting industrial contractor insurance for petrochemical and heavy industrial work shouldn't be complicated. Our process is built to move fast.",
   },
   testimonials: {
-    eyebrow: "From dairy producers",
-    h2Lead: "Dairies that found",
-    h2Highlight: "coverage that actually pays",
+    eyebrow: "What industrial contractors say",
+    h2Lead: "Trusted by Heavy Industrial",
+    h2Highlight: "Contractors Nationwide",
   },
   finalCta: {
-    h2Lead: "Protect Your Dairy Operation",
-    h2Highlight: "with coverage built for the herd.",
-    lead: "Whether you need livestock mortality today or a full program — property, equipment and spoilage, workers' comp, pollution, and auto — one call gets you real quotes from specialty ag markets. Not a voicemail and a two-week wait.",
+    h2Lead: "Ready to Protect Your",
+    h2Highlight: "Industrial Contracting Business?",
+    lead: "Get a specialty insurance quote for your heavy industrial contracting operation. 15 minutes to a complete program from A+ rated carriers built for industrial project work.",
   },
   ctaBand: {
-    defaultTitle: "Ready to protect your dairy operation?",
+    defaultTitle: "Get Your Industrial Contractor Insurance Quote",
     defaultDescription:
-      "Get a 15-minute quote from specialists who understand dairy farming — livestock mortality, parlors, bulk tanks and chillers, and manure exposure.",
+      "GL, workers comp, umbrella, and CPL — programs built for mechanical, electrical, civil, and process contractors on major industrial projects.",
   },
   faq: {
-    defaultTitleLead: "Dairy farm insurance,",
-    defaultTitleHighlight: "in plain English",
+    defaultTitleLead: "Industrial Contractors Insurance",
+    defaultTitleHighlight: "Questions Answered",
   },
   servicesPage: {
-    metaTitle: "Dairy Farm Insurance Coverage & Services",
+    metaTitle: "Industrial Contractors Insurance | All Coverage Lines",
     metaDescription:
-      "Eight lines of insurance built for dairy farms: livestock mortality, farm property, equipment breakdown and milk spoilage, dairy product liability, general liability, workers' comp, commercial auto, and pollution. Licensed all 50 states.",
-    h1Lead: "Insurance built line-by-line for",
-    h1Highlight: "dairy farms",
-    lead: "Each policy below addresses a specific exposure in dairy farming — from the livestock mortality a standard farm policy undervalues to the bulk-tank and spoilage coverage your property program needs to handle correctly.",
-    ogTitle: "Dairy Farm Insurance Coverage | Contractors Choice Agency",
+      "Complete insurance programs for heavy industrial contractors — general liability, professional liability, workers compensation, commercial auto, CPL, umbrella, and inland marine.",
+    h1Lead: "Heavy Industrial Contractor",
+    h1Highlight: "Coverage Lines",
+    lead: "Every coverage line heavy industrial contractors need — from core GL and workers comp to professional liability and high-limit umbrella for major facility work.",
+    ogTitle: "Industrial Contractors Insurance | All Coverage Lines",
     ogDescription:
-      "Livestock mortality, farm property, equipment breakdown and spoilage, dairy product liability, GL, workers' comp, commercial auto, and pollution — written specifically for dairy farms.",
-    ctaTitle: "Not sure which lines you need?",
+      "Specialty insurance for heavy industrial contractors on refineries, chemical plants, and power plants — GL, workers comp, professional liability, umbrella. 15-minute quotes.",
+    ctaTitle: "Get Your Industrial Contractor Insurance Quote",
     ctaDescription:
-      "Most dairy farms bundle livestock mortality + property + equipment & spoilage + workers' comp + pollution into one coordinated program. We'll build the right mix in one call.",
+      "We write programs for mechanical, electrical, civil, and process contractors working on major industrial facilities.",
   },
   blogPage: {
-    metaTitle: "Dairy Farm Insurance Blog — Guides & Insights",
+    metaTitle: "Industrial Contractors Insurance Blog | Heavy Industrial Contractor Resources",
     metaDescription:
-      "Practical insurance guidance for dairy farms: livestock mortality, milking-parlor property, equipment breakdown and milk spoilage, manure-runoff pollution, and workers' comp for dairy crews.",
-    h1Lead: "Dairy farm insurance,",
-    h1Highlight: "decoded",
-    lead: "Plain-English guides on the coverage that matters for dairy operations — livestock mortality, parlors and barns, bulk tanks and chillers, manure and runoff, and workers' comp for dairy crews.",
-    ogTitle: "Dairy Farm Insurance Blog | Contractors Choice Agency",
-    ogDescription:
-      "Practical insurance guidance for dairy farms: livestock mortality, milking-parlor property, equipment breakdown and milk spoilage, manure-runoff pollution, and workers' comp for dairy crews.",
+      "Insurance insights for heavy industrial contractors — risk management, coverage guidance, and industry resources for mechanical, electrical, civil, and process contractors.",
+    h1Lead: "Industrial Contractors Insurance",
+    h1Highlight: "Resources",
+    lead: "Coverage guidance and risk management resources for heavy industrial contractors on major projects.",
+    ogTitle: "Industrial Contractors Insurance Blog",
+    ogDescription: "Insurance insights for heavy industrial contractors on refineries, chemical plants, and major industrial facilities.",
   },
   serviceDetail: {
-    h1Suffix: "for dairy farms",
-    imageAltSuffix: "dairy farming",
-    category: "Dairy Farm Insurance",
+    h1Suffix: "for Heavy Industrial Contractors",
+    imageAltSuffix: "industrial contractor insurance",
+    category: "Specialty Contractor Insurance",
   },
   about: {
-    metaTitle: "About Dairy Insurance | Contractors Choice Agency",
+    metaTitle: "About Industrial Contractors Insurance | Contractors Choice Agency",
     metaDescription:
-      "Dairy Insurance is the dairy-focused division of Contractors Choice Agency, founded in 2005 by former contractor Josh Cotner. Livestock mortality, farm property, equipment breakdown and spoilage, product liability, and pollution for dairy farms. Licensed all 50 states.",
-    h1Lead: "Built by people who know the land,",
-    h1Highlight: "for dairy operations",
-    lead: "Dairy Insurance is the dairy-focused division of Contractors Choice Agency — founded in 2005 by Josh Cotner, who knows exactly what happens when a livestock-mortality undervaluation or a spoilage exclusion shows up in a claim denial.",
-    imageAlt: "A dairy farmer in the milking parlor with the herd",
-    storyEyebrow: "Our story",
-    storyTitle: "From the jobsite to the agency.",
+      "Industrial Contractors Insurance is a specialty program by Contractors Choice Agency — insuring heavy industrial contractors since 2005. Licensed all 50 states, NPN 8608479.",
+    h1Lead: "About Industrial Contractors",
+    h1Highlight: "Insurance",
+    lead: "We are Contractors Choice Agency — specialty insurance for heavy industrial contractors since 2005. Programs built for mechanical, electrical, civil, and process contractors on major industrial projects.",
+    imageAlt: "Contractors Choice Agency team assisting heavy industrial contractors",
+    storyEyebrow: "Who we are",
+    storyTitle: "Built for Heavy Industrial Contractors",
     storyLead:
-      "Josh Cotner ran equipment, read specs, and filed certificates before founding CCA in 2005. That background is why we understand what's at stake when a dairy barn burns, a bulk tank fails, and the farm's carrier cites a coverage gap.",
-    valuesTitle: "Four things we won't compromise on.",
+      "Contractors Choice Agency has been writing specialty contractor insurance since 2005. Our heavy industrial contractor program addresses the specific risks of petrochemical facility work, power plant construction, and major industrial contracting — high-limit umbrella, pollution liability for industrial environments, professional liability for design-build, and workers comp programs that understand operating facility hazards.",
     timeline: [
-      { year: "2005", title: "Contractors Choice Agency founded", desc: "Josh Cotner opens CCA in Chandler, AZ, after years working in the trades — built to insure farms, contractors, and operators the right way." },
-      { year: "15 yrs", title: "Expanded to specialty agricultural markets", desc: "After placing programs for dozens of specialty contractor and trade categories, CCA extends expertise to dairy and livestock operations with unique risk profiles." },
-      { year: "Today", title: "Dedicated dairy division", desc: "Dairy Insurance focuses CCA's expertise on dairy producers — operations where livestock mortality, parlors and bulk tanks, spoilage, and manure exposure are the real risks." },
+      { year: "2005", title: "Founded", desc: "Contractors Choice Agency opens, focused on specialty contractor insurance programs." },
+      { year: "2009", title: "Industrial Contractor Focus", desc: "Developed dedicated programs for heavy industrial contractors working on refineries, chemical plants, and power facilities." },
+      { year: "2016", title: "All 50 States", desc: "Licensed nationwide, writing industrial contractor programs for major facility work from Texas to California." },
+      { year: "2024", title: "500+ Industrial Contractors", desc: "Over 500 heavy industrial contractors trust CCA for their specialty insurance programs." },
     ],
+    valuesTitle: "How We Work",
     values: [
-      { icon: "HardHat", title: "Operator-first, always", desc: "Josh spent years in the trades before starting the agency. We speak the language of dairy farming because we know what happens when coverage fails at claim time." },
-      { icon: "ShieldCheck", title: "Coverage that closes the gaps", desc: "Livestock undervaluation, equipment and spoilage exclusions, and manure-runoff exposure — we address the risks standard farm markets miss." },
-      { icon: "Award", title: "A-rated markets only", desc: "We shop carriers with the financial strength and agricultural experience to be there when a barn fire, a bulk-tank failure, or a pollution claim hits." },
-      { icon: "Handshake", title: "Honest, no-pressure advice", desc: "If you don't need a line of coverage, we'll tell you. We earn trust by being straight about what your dairy actually requires." },
+      { icon: "HardHat", title: "Facility Owner Requirements", desc: "We understand the AI language, umbrella limits, and CPL requirements that refinery and chemical plant operators impose on contractors. Your program is built to pass their insurance reviews." },
+      { icon: "ShieldCheck", title: "Complete Programs", desc: "GL, workers comp, professional liability, umbrella, CPL, inland marine — coordinated programs that address all the risk categories heavy industrial work creates." },
+      { icon: "Award", title: "A+ Rated Carriers", desc: "Major project owners require financially strong carriers. We place industrial contractor programs with AM Best A+ rated specialty insurers." },
+      { icon: "Handshake", title: "Long-Term Relationships", desc: "Heavy industrial contractors work with us year after year — we understand your operations, your clients, and how to build programs that grow with your business." },
     ],
   },
   quote: {
-    h1Lead: "Get your",
-    h1Highlight: "dairy farm insurance quote",
-    lead: "Tell us about your herd and operation. We'll shop A-rated specialty ag markets and come back with real quotes in about 15 minutes — no obligation.",
-    businessPlaceholder: "Maple Ridge Dairy LLC",
-    emailPlaceholder: "janet@mapleridgedairy.com",
-    phonePlaceholder: "(608) 555-0100",
+    h1Lead: "Get Your Industrial Contractor",
+    h1Highlight: "Insurance Quote",
+    lead: "Tell us about your industrial contracting operation — project types, facility environments, crew size, and states — and we will build a program around your specific risk profile.",
+    trustNicheTitle: "Built for Heavy Industrial Contractors",
+    trustNicheDesc:
+      "We write programs for mechanical, electrical, civil, and process contractors working in refineries, chemical plants, power plants, and major industrial facilities.",
+    errorMessage: "Something went wrong. Please call us at 844-967-5247.",
+    businessPlaceholder: "ABC Industrial Contractors LLC",
+    emailPlaceholder: "you@industrialcontractors.com",
+    phonePlaceholder: "(555) 000-0000",
     messagePlaceholder:
-      "Herd size, milking system, parlor type, equipment value, acres and feed, coverage lines needed, current insurer, loss history, or anything else that helps us quote accurately…",
-    errorMessage: "Something went wrong. Please call us at 844-967-5247 or try again.",
-    trustNicheTitle: "Built for dairies",
-    trustNicheDesc: "Policies written for dairy operations — not generic farm-owner coverage.",
+      "Tell us about your operation — contractor type (mechanical, electrical, civil, process), typical project environments (refineries, chemical plants, power plants), crew size, states, annual revenue...",
   },
   contact: {
-    h1Lead: "Let's talk about your",
-    h1Highlight: "dairy farm coverage",
-    lead: "Questions, a quote, or a claim — reach a person who knows dairy farming, not a queue.",
-    errorMessage: "Something went wrong. Please call us at 844-967-5247.",
+    h1Lead: "Contact Industrial Contractors",
+    h1Highlight: "Insurance",
+    lead: "Questions about specialty coverage for your heavy industrial contracting operation? Our specialists understand major facility requirements.",
+    errorMessage: "Something went wrong. Please call us directly at 844-967-5247.",
   },
   coveragePage: {
-    metaTitle: "Dairy Farm Insurance — National Coverage, All 50 States",
+    metaTitle: "Industrial Contractors Insurance Coverage | What's Covered",
     metaDescription:
-      "Contractors Choice Agency writes dairy farm insurance in all 50 states — Wisconsin, California, the Northeast, Pacific Northwest, Southwest, and everywhere dairy operations run.",
-    h1Lead: "National reach.",
-    h1Highlight: "All 50 states, every dairy market.",
-    lead: "Contractors Choice Agency places dairy insurance programs in all 50 states — from Wisconsin and California to the Northeast creameries and Southwest desert dairies.",
-    sectionTitle: "Dairy farming regions we serve.",
+      "What heavy industrial contractor insurance covers — GL, professional liability, workers comp, CPL, and high-limit umbrella for mechanical, electrical, civil, and process contractors.",
+    h1Lead: "Heavy Industrial Contractor",
+    h1Highlight: "Insurance Coverage",
+    lead: "Comprehensive coverage for the full range of heavy industrial contractor risks on major facility projects — GL, pollution liability, professional liability, and high-capacity umbrella.",
+    sectionTitle: "Coverage Areas for Heavy Industrial Contractors",
     nationwideLead:
-      "Whether your dairy is in Wisconsin, California, the Northeast, the Great Plains, or anywhere in between — one agent, one coordinated program. NPN #8608479.",
+      "We write heavy industrial contractor programs in all 50 states — from Gulf Coast petrochemical corridor work to Midwest power plant construction to West Coast refinery maintenance.",
     faqs: [
-      { q: "Do you only insure dairy farms in certain regions?", a: "No. Contractors Choice Agency is licensed in all 50 states and writes dairy programs for farms anywhere in the country — Wisconsin, California, the Northeast, Pacific Northwest, Southwest, Great Plains, and everywhere in between." },
-      { q: "Can you write coverage if we ship milk or haul across state lines?", a: "Yes. We structure programs so your product liability, property, workers' comp, and commercial auto coverage coordinate across state lines without gaps — including milk tankers and feed trucks that cross borders." },
-      { q: "Do you understand the specific risks of my state's dairy market?", a: "Yes. We work with specialty ag markets that understand regional differences — Wisconsin and Northeast registered-stock herds, California large-herd water-quality rules, and Southwest desert-dairy lagoon exposure." },
-      { q: "Can you coordinate coverage across multiple locations or leased ground?", a: "Yes. If you milk at multiple sites, raise heifers off-site, or lease ground, we build one coordinated program so there are no gaps between owned, leased, and custom operations." },
+      {
+        q: "Why do industrial contractors need contractors pollution liability?",
+        a: "Industrial contractors working in operating petrochemical, chemical, and process facilities face pollution exposures from the facility environment and from their own operations. GL's pollution exclusion can deny claims arising from chemical exposure, VOC releases, or process material contact. CPL fills that gap for contractors working in industrial facility environments.",
+      },
+      {
+        q: "What umbrella limits do industrial project owners typically require?",
+        a: "Petrochemical operators and major industrial facility owners routinely require $5M to $25M in total liability capacity depending on the project type and facility risk level. We access umbrella and excess capacity to meet these requirements for established industrial contractors.",
+      },
+      {
+        q: "Do process contractors need professional liability?",
+        a: "Yes. Process contractors who provide engineering input, design-build services, or recommendations on process specifications face professional liability exposure if their professional services are alleged to have caused a loss. This is separate from and in addition to general liability coverage.",
+      },
+      {
+        q: "How does workers comp work for industrial contractors in operating facilities?",
+        a: "Workers comp covers injuries arising from the specific hazards of industrial facility work — process chemical exposure, falls from elevated structures in operating plants, confined space incidents, electrical injuries, and heavy equipment injuries. Carriers experienced with industrial facility operations understand these risks and handle claims appropriately.",
+      },
+      {
+        q: "What additional insured language do refinery owners require?",
+        a: "Petrochemical and refinery operators typically require ISO CG 2010/2037 AI endorsements, primary and non-contributory language, waiver of subrogation, and specific umbrella limits. Some operators have their own required endorsement forms. We verify your program meets facility owner requirements before you mobilize.",
+      },
+      {
+        q: "Can industrial contractors with prior claims get coverage?",
+        a: "Yes, in most cases. Industrial contractor claims history is reviewed in context — what happened, what changed, and what your current safety program looks like. We work with multiple carriers who write industrial contractors with prior claims when the account is otherwise solid.",
+      },
     ],
   },
 } as const;
 
-/* ============================================================
-   PROCESS
-   ============================================================ */
 export const PROCESS = [
-  { step: "01", icon: PhoneCall, title: "Tell us about your dairy", description: "15-min call or form. Herd size and value, milking system and parlor, equipment and feed, and the coverage lines your old carrier excluded." },
-  { step: "02", icon: FileSearch, title: "We shop specialty ag markets", description: "Niche markets that actually write dairy livestock mortality and spoilage — not generic farm markets that carve them out." },
-  { step: "03", icon: FileSignature, title: "Bind a program built for dairy", description: "Livestock mortality + property + equipment & spoilage + workers' comp + pollution, coordinated so there are no gaps across your operation." },
-  { step: "04", icon: ShieldCheck, title: "Claims support that moves fast", description: "When a barn fire, bulk-tank failure, or runoff claim arrives, you reach a person with context — not a queue. 2-hour response." },
+  {
+    step: 1,
+    icon: PhoneCall,
+    title: "Contact Us About Your Operation",
+    description:
+      "Call 844-967-5247 or submit an online quote. Tell us about your contracting type — mechanical, electrical, civil, process — and the facility environments where you work.",
+  },
+  {
+    step: 2,
+    icon: FileSearch,
+    title: "We Evaluate Your Project Profile",
+    description:
+      "We review your industrial contracting operation — project types, facility environments, crew size, professional services provided — and identify the right carrier and program structure.",
+  },
+  {
+    step: 3,
+    icon: FileSignature,
+    title: "Receive Your Complete Program",
+    description:
+      "We present GL, workers comp, professional liability, umbrella, and CPL — coordinated program with coverage explanations and premium breakdown by line.",
+  },
+  {
+    step: 4,
+    icon: ShieldCheck,
+    title: "Bind and Get Certificates",
+    description:
+      "Approve the program. We bind coverage and issue certificates with the AI endorsements, umbrella limits, and policy language your facility owner clients require.",
+  },
 ] as const;
 
-/* ============================================================
-   WHY CHOOSE US
-   ============================================================ */
 export const WHY_CHOOSE = [
-  { icon: ShieldCheck, title: "Livestock mortality valued like it should be", description: "Standard farm policies pay grade-cattle values for registered stock. We place mortality coverage that reflects the real value of your milking cows and breeding animals." },
-  { icon: Droplets, title: "Equipment breakdown with milk spoilage", description: "Milking systems, bulk tanks, and chillers fail — and a tank of milk spoils with them. We build equipment-breakdown programs that include the spoilage that follows." },
-  { icon: Milk, title: "Manure-runoff and environmental coverage", description: "Every dairy carries lagoon and nutrient-runoff exposure. Standard policies exclude it. We place environmental liability that covers a release into soil or water." },
-  { icon: Building2, title: "Farm property built for livestock exposure", description: "Parlors, freestall barns, silos, and feed storage don't fit generic forms — and livestock and manure change the fire and liability profile. We schedule it correctly." },
-  { icon: Package, title: "We place the hard dairy risks", description: "Been declined over manure exposure, a barn-fire loss run, or OSHA citations? We have E&S markets for dairies others won't touch." },
-  { icon: HardHat, title: "Run by a former contractor", description: "Josh Cotner knows how operations work and what happens when coverage fails at claim time — on the farm and off." },
+  {
+    icon: ShieldCheck,
+    title: "Facility Owner Insurance Expertise",
+    description:
+      "We know refinery and chemical plant owner insurance requirements — specific AI forms, umbrella limits, CPL requirements, and certificate language. Your program is built to satisfy these requirements.",
+  },
+  {
+    icon: Umbrella,
+    title: "High-Limit Umbrella Capacity",
+    description:
+      "We access umbrella and excess capacity up to $25M for heavy industrial contractors. Meeting the highest facility owner liability requirements is a core capability of our industrial contractor programs.",
+  },
+  {
+    icon: HardHat,
+    title: "Industrial Facility WC Specialists",
+    description:
+      "Workers comp for crews working in operating refineries and chemical plants requires carriers who understand the risk. We place industrial contractor WC with carriers experienced in petrochemical facility operations.",
+  },
+  {
+    icon: FileSignature,
+    title: "Professional Liability for Process Work",
+    description:
+      "Process contractors, design-build firms, and mechanical engineers who provide professional services need E&O coverage separate from GL. We structure professional liability for industrial contractor professional exposure.",
+  },
 ] as const;
 
-/* ============================================================
-   HOMEPAGE FAQ — 20 questions
-   ============================================================ */
 export const HOME_FAQS = [
-  { q: "What insurance does a dairy farm need?", a: "A working dairy typically needs livestock mortality for the herd, farm property for barns and the milking parlor, equipment breakdown with milk spoilage, dairy product liability, general liability, workers' compensation, commercial auto for milk tankers and feed trucks, and pollution/environmental coverage for manure and runoff. Most dairies carry all eight as one coordinated program." },
-  { q: "How much does dairy farm insurance cost?", a: "It depends on herd size and value, parlor and equipment value, payroll and crew size, acreage and feed inventory, and loss history. Small pasture dairies may pay a few thousand a year; large parlor operations with high-value registered stock and significant equipment run considerably more. We quote your actual operation in about 15 minutes — never a generic estimate." },
-  { q: "Does farm insurance cover dairy cattle death?", a: "Only if livestock mortality is specifically scheduled. A standard farm-owner policy covers buildings and liability but pays little or nothing for the death of animals. Livestock mortality insurance is what covers the herd against death from disease, accident, disaster, and theft." },
-  { q: "What's the difference between named-peril and full-mortality livestock coverage?", a: "Named-peril (limited) mortality pays only for death from specific listed causes — fire, lightning, certain accidents. Full (broad) mortality covers death from almost any cause, including disease. Full mortality costs more but is what most dairies want for valuable milking cows and registered breeding stock." },
-  { q: "Does my farm property policy cover the milking parlor and bulk tank?", a: "It can, but only if they're properly scheduled and valued. Many farm policies cap or exclude specialized equipment, or pay actual cash value with heavy depreciation. We schedule parlors, bulk tanks, and chillers at replacement cost so a loss doesn't leave you underinsured." },
-  { q: "Is milk spoilage covered if my chiller or bulk tank fails?", a: "Not under a standard property policy. Milk and product spoilage from equipment breakdown requires an equipment-breakdown endorsement (often called boiler & machinery) with a spoilage component. Without it, a chiller failure that ruins a full bulk tank is an uncovered loss." },
-  { q: "Do I need product liability if I sell milk to a co-op or processor?", a: "Often yes. If you bottle, process, sell raw milk, direct-market, or produce cheese or other dairy products, product liability covers bodily-illness and recall claims from contaminated or mislabeled product. Even dairies shipping to a co-op can be named in a downstream foodborne-illness claim." },
-  { q: "Does dairy farm insurance cover manure runoff and lagoon spills?", a: "Standard farm and general liability policies exclude pollution. Manure storage, lagoon failure, nutrient and fertilizer runoff, and chemical leaks need dedicated pollution/environmental liability — which we place specifically for dairies." },
-  { q: "Do I need workers' compensation for dairy employees?", a: "In most states, yes — workers' comp is required once you have employees, and dairy work is high-hazard. Animal handling, parlor slip and crush injuries, equipment and PTO incidents, and chemical exposure all make proper workers' comp essential. We class-code dairy labor correctly." },
-  { q: "What class codes apply to dairy farm workers?", a: "Dairy operations carry several codes — milking and herd workers, feeding and field crews, equipment operators, and office staff. Correct classification matters: wrong codes mean overpayment, undercoverage, and audit surprises. We assign codes to your actual workflow." },
-  { q: "Are milk tankers and feed trucks covered under farm auto or commercial auto?", a: "Vehicles used on public roads — milk tankers, feed and commodity trucks, pickups, and tractors in transit — need commercial auto. Farm auto forms often limit or exclude over-the-road trucking and hired/non-owned use. We coordinate auto with your inland marine and transit coverage." },
-  { q: "Is my dairy covered if a barn fire kills part of the herd?", a: "Only with the right coverage in place. The barn is covered under farm property, but the animals lost are covered under livestock mortality — and only up to their scheduled value. A barn fire is one of the most common ways dairies discover their stock was undervalued." },
-  { q: "Does dairy insurance cover agri-tourism and farm tours?", a: "Agri-tourism, farm tours, petting zoos, and on-farm events add premises-liability exposure that standard farm policies often exclude or under-limit. General liability with an agri-tourism endorsement covers visitor injuries — tell us if you host the public." },
-  { q: "What happens during a claim if my herd records are incomplete?", a: "Livestock mortality claims are paid against records — animal ID, breed, value, and sometimes vet history. Incomplete records mean delayed or reduced payments. We help you document the herd properly up front so a claim is paid quickly and at full value." },
-  { q: "Are registered and show cattle valued differently than grade cattle?", a: "Yes. Registered, show, and high-genetic animals carry values far above grade cattle and must be insured individually on their merit. Standard mortality pays a flat rate; we schedule high-value animals at their real worth." },
-  { q: "Can you insure an organic or grazing-based dairy differently?", a: "Yes. Organic dairies carry the premium value of certified stock and feed, and pasture-based and seasonal dairies have different equipment, labor, and feed profiles. We tailor the program — including organic feed and certified-stock values — to how you actually farm." },
-  { q: "Do you write dairy insurance in all 50 states?", a: "Yes. Contractors Choice Agency is licensed in all 50 states and has markets for dairy operations whether your farm is in Wisconsin, California, the Northeast, or anywhere in between." },
-  { q: "How fast can we get a dairy insurance quote?", a: "Typically 15 minutes on a call. For larger programs with high-value stock or significant equipment we may need a day or two to involve the right markets, but we move fast and tell you the timeline up front." },
-  { q: "Will you insure a dairy that's been declined or has prior losses?", a: "Often yes. We have admitted and excess-and-surplus (E&S) markets for dairies declined over manure exposure, a prior barn-fire or mortality loss run, OSHA citations, or other issues. Bring us what you have and we'll find a path." },
-  { q: "Should I bundle all my dairy coverage with one program?", a: "Usually yes. Bundling livestock mortality, property, equipment & spoilage, workers' comp, pollution, and auto into one coordinated program closes gaps between policies and is almost always cheaper and cleaner than separate policies from separate carriers." },
-];
+  { q: "What insurance do heavy industrial contractors need?", a: "Heavy industrial contractors typically need: GL with appropriate AI endorsements for facility owners; workers comp covering operating facility hazards; professional liability for design-build and process engineering services; CPL for work in chemical and petrochemical environments; commercial auto; inland marine for equipment; and umbrella to meet facility owner limit requirements." },
+  { q: "What umbrella limits do petrochemical operators require?", a: "Refinery and chemical plant operators typically require $5M to $25M in total liability capacity depending on project type and facility risk level. Some major operators require specific umbrella policies with the operator named as additional insured. We access the capacity to meet these requirements." },
+  { q: "Do mechanical contractors need professional liability?", a: "Mechanical contractors who provide design-build services, engineering input, or professional recommendations face professional liability exposure if those services cause a loss. A mechanical contractor who specifies a system that fails may face a professional liability claim separate from any GL claim." },
+  { q: "How does CPL work for industrial contractors in operating facilities?", a: "GL has a pollution exclusion that can apply to chemical exposures, process material releases, and other pollution conditions that industrial contractors encounter in operating facilities. CPL explicitly covers third-party claims arising from pollution conditions — covering what GL excludes." },
+  { q: "Can you insure industrial contractors in multiple states?", a: "Yes. We write industrial contractor programs in all 50 states. GL typically covers you wherever you work. Workers comp requires state-specific coverage; we coordinate multi-state WC programs. Some states have monopolistic state funds that require separate handling." },
+  { q: "What AI endorsements do refinery owners typically require?", a: "Petrochemical operators typically require ISO CG 2010 (ongoing operations) and CG 2037 (completed operations) AI endorsements, primary and non-contributory language, waiver of subrogation, and umbrella limits specified in the contractor agreement. Some operators have proprietary endorsement requirements. We build these into your policy before you mobilize." },
+  { q: "Does workers comp cover chemical exposure injuries in industrial facilities?", a: "Yes. Workers comp covers occupational disease and injury from chemical exposure in industrial facility environments — process chemical contact, toxic vapor exposure, and related conditions. Carriers familiar with industrial facility environments handle these claims more accurately than general market carriers." },
+  { q: "Do industrial contractors need inland marine coverage?", a: "Yes. GL does not cover your own tools and equipment. An inland marine or equipment floater covers your contractor equipment at project sites, in transit, and at your yard. For industrial contractors with significant equipment deployed across multiple active projects, inland marine is essential." },
+  { q: "What is the difference between umbrella and excess liability?", a: "Umbrella provides limits above your primary policies and may include its own coverage grant. Excess follows the form of the underlying policy strictly. For industrial contractors, both provide additional capacity above GL and auto. The key question is how each interacts with CPL — we structure your program so coverage layers work together without gaps." },
+  { q: "Do you insure industrial contractors with prior claims?", a: "Yes, in most cases. We work with multiple carriers who write industrial contractors with prior claims history when the account is otherwise strong. Transparency about prior claims helps us find the right carrier fit." },
+  { q: "What is an installation floater for industrial contractors?", a: "An installation floater covers materials, equipment, and work in progress at project sites during industrial construction and turnaround work. For major industrial projects with significant material and equipment pre-positioned at project sites, an installation floater protects against theft, damage, and loss before project completion and owner acceptance." },
+  { q: "How does professional liability work for process contractors?", a: "Professional liability for process contractors covers claims alleging your professional services — process design, engineering recommendations, system specifications — caused a financial loss. It is claims-made coverage, meaning you need active coverage when the claim is filed. We explain claims-made mechanics and tail coverage when structuring your E&O program." },
+  { q: "What workers comp class codes apply to industrial contractors?", a: "Industrial contractor WC classification depends on work type — pipe fitters, millwrights, electricians, and boilermakers each have specific codes. Correct classification matters for premium accuracy and audit compliance. We verify your classification before binding." },
+  { q: "How do I get certificates quickly for a facility mobilization?", a: "Once your program is bound, we issue certificates same day including AI endorsements, umbrella limits, and the specific endorsement language your facility owner requires. Contact us at 844-967-5247 for priority certificate issuance before mobilization." },
+  { q: "Can industrial contractors get monthly payment plans?", a: "Yes. Monthly payment plans are available through most carriers and premium finance options for industrial contractor programs." },
+  { q: "Do you insure union and non-union industrial contractors?", a: "Yes. We insure both union and non-union heavy industrial contractors. Union contractors may have specific reporting and audit requirements under their collective bargaining agreements; we are familiar with these requirements." },
+  { q: "What is the minimum GL coverage for industrial facility work?", a: "Most facility owners require $1M to $2M per occurrence at minimum. Refinery and chemical plant operators often require $5M or more total — which means carrying a $1M primary GL plus a $4M or higher umbrella. We build the complete program around your specific client requirements." },
+  { q: "How quickly can I get a quote?", a: "We target 15-minute turnarounds for standard industrial contractor programs. Complex multi-state operations or accounts with professional liability and umbrella requirements may take a few hours to properly market. Call 844-967-5247 for fastest service." },
+  { q: "What does a complete industrial contractor insurance program cost?", a: "Program cost depends significantly on your operation — contractor type, annual revenue, crew size, states, and facility environments. A comprehensive program for a mid-size industrial contractor typically runs $20,000 to $75,000 annually across all lines. Call us for a specific quote." },
+  { q: "How do I contact Industrial Contractors Insurance?", a: "Call 844-967-5247 (Mon–Fri 8am–5pm MST), email josh@contractorschoiceagency.com, or submit the online quote form. We are at 12220 E Riggs Road, Suite #105, Chandler AZ 85249. NPN 8608479, licensed all 50 states." },
+] as const;
 
-/* ============================================================
-   GENERAL FAQ — pads service & location pages to 20.
-   ============================================================ */
 export const GENERAL_FAQS = [
-  { q: "How much does dairy farm insurance cost?", a: "Cost is driven by herd size and value, parlor and equipment value, payroll, feed inventory, and loss history. We quote your actual operation in about 15 minutes — never a ballpark from a generic farm form." },
-  { q: "Do you write dairy insurance in all 50 states?", a: "Yes. Contractors Choice Agency is licensed in all 50 states and writes dairy programs nationwide — Wisconsin, California, the Northeast, Pacific Northwest, Southwest, and everywhere dairy operates." },
-  { q: "How fast can we get a quote?", a: "Typically 15 minutes on a call. Larger or higher-value programs may take a day or two to place with the right markets, but we move fast and set expectations up front." },
-  { q: "Will you insure a dairy that's been declined or has prior losses?", a: "Often yes. We have admitted and E&S markets for dairies declined over manure exposure, prior loss runs, OSHA citations, or other issues. Bring us your situation and we'll find a market." },
-  { q: "Should I bundle all my dairy coverage with one program?", a: "Usually yes. A coordinated program closes gaps between policies and is typically cheaper than separate policies from separate carriers — and far easier to manage at claim time." },
-  { q: "What does an A-rated carrier mean and why does it matter?", a: "A.M. Best ratings reflect a carrier's financial strength and ability to pay claims. We place coverage with A-rated (and A.M. Best A+ where possible) carriers so the coverage is there when a barn fire, bulk-tank failure, or pollution claim hits." },
-  { q: "Do you insure organic, grazing-based, and raw-milk dairies?", a: "Yes. Organic herds carry premium stock and feed value; pasture-based and seasonal dairies have different equipment and labor profiles; raw-milk and direct-market operations carry added product-liability exposure. We tailor each program accordingly." },
-  { q: "How are registered and show cattle valued at claim time?", a: "Registered, show, and high-genetic animals are scheduled individually at their real value — not a flat grade-cattle rate. Proper individual scheduling is what ensures a mortality claim pays what the animal was actually worth." },
-  { q: "What information do you need to quote my dairy?", a: "Herd size and breakdown, animal values (especially registered stock), parlor type and milking system, equipment list and values, acreage and feed inventory, payroll and crew size, current coverage, and loss history. The more detail, the more accurate the quote." },
-  { q: "Does dairy insurance cover agri-tourism and farm tours?", a: "It can, with the right endorsement. Hosting tours, petting zoos, or events adds visitor-liability exposure that standard policies under-cover. Tell us if the public visits and we'll add agri-tourism liability." },
-  { q: "Are seasonal and pasture-based dairies insured differently?", a: "Yes. Seasonal calving and grazing dairies have different feed, labor, and equipment patterns — and often lower confinement exposures. We reflect how you actually farm in the rating and coverage, not a generic confinement-dairy code." },
-  { q: "What happens if my herd records are incomplete at claim time?", a: "Livestock claims are paid against records. Incomplete ID, breed, or value records mean delays and reduced payments. We help you document the herd properly up front so a claim is settled quickly and fully." },
-  { q: "Can you coordinate coverage across multiple locations or leased ground?", a: "Yes. If you milk at multiple sites, raise heifers off-site, or lease acreage, we build one coordinated program covering owned, leased, and custom operations with no gaps." },
-  { q: "Do you offer coverage for on-farm processing and creameries?", a: "Yes. If you bottle, make cheese, butter, or other products, or run a creamery, we add product liability, equipment breakdown, and property coverage specific to processing — beyond a standard dairy farm policy." },
-];
+  { q: "Is Industrial Contractors Insurance licensed nationwide?", a: "Yes. Contractors Choice Agency holds licenses in all 50 states and writes heavy industrial contractor programs coast to coast. NPN 8608479." },
+  { q: "What carriers do you work with?", a: "AM Best A+ rated specialty carriers with appetites for heavy industrial contractor risks. Carrier selection is based on your operation type, facility environments, and states." },
+  { q: "How do I submit a claim?", a: "Call 844-967-5247 immediately. We provide 2-hour claims response during business hours." },
+  { q: "Can I pay monthly?", a: "Yes. Monthly payment plans and premium finance options are available for industrial contractor programs." },
+  { q: "Do you issue same-day certificates?", a: "Yes. Once coverage is bound, we issue certificates same day including AI endorsements and umbrella evidence as required by your facility owner clients." },
+  { q: "How long has Contractors Choice Agency been insuring industrial contractors?", a: "Since 2005 — over 20 years. Heavy industrial contractor programs have been a specialty focus since 2009." },
+  { q: "What do I need to get a quote?", a: "Business name, years in operation, annual revenue, number of employees, contractor type, states where you work, typical project environments, and claims history for the past 5 years." },
+  { q: "Do you insure newer industrial contracting businesses?", a: "Yes. Newer businesses may have fewer carrier options for high-limit umbrella, but we can typically place coverage that meets initial project requirements." },
+  { q: "Can you handle multi-state WC for industrial crews?", a: "Yes. We coordinate multi-state workers compensation programs as standard for industrial contractors who work across state lines and jurisdictions." },
+  { q: "Do you insure union industrial contractors?", a: "Yes. We insure both union and non-union industrial contractors." },
+  { q: "Phone number?", a: "844-967-5247, Monday through Friday 8am to 5pm Mountain Time." },
+  { q: "Office location?", a: "12220 E Riggs Road, Suite #105, Chandler, AZ 85249." },
+  { q: "Email?", a: "josh@contractorschoiceagency.com." },
+  { q: "Can I get a quote online?", a: "Yes. Submit the quote form at industrialcontractorsinsurance.com/quote and we will respond within 15 minutes during business hours." },
+] as const;
 
-/* ============================================================
-   SERVICE DETAIL
-   ============================================================ */
 export interface ServiceDetail {
   heroBlurb: string;
   whatsCovered: string[];
@@ -243,153 +300,121 @@ export interface ServiceDetail {
 }
 
 export const SERVICE_DETAIL: Record<string, ServiceDetail> = {
-  "livestock-mortality": {
-    heroBlurb: "Insurance for your milking cows, heifers, calves, and registered breeding stock against death from disease, accident, disaster, and theft — the #1 undervalued risk on a dairy. Standard farm policies barely cover it.",
-    whatsCovered: ["Death of milking cows, dry cows, heifers, and calves from accident or disease", "Loss from barn fire, lightning, windstorm, and other natural disasters", "Theft and mysterious disappearance of high-value animals", "Full (broad) mortality for death from almost any cause", "Named-peril (limited) mortality for listed catastrophic causes", "Individual scheduling of registered, show, and high-genetic animals at real value"],
-    whoItsFor: ["Dairies with registered, show, or high-genetic breeding stock", "Operations whose herd value exceeds what a farm-owner policy would pay", "Creameries and dairies with capital tied up in expensive milking cows", "Any producer whose current policy pays only grade-cattle rates for animals"],
-    whyCca: ["We value your herd on its real merit — not a flat rate per head", "Full-mortality and named-peril options matched to each class of stock", "E&S market access for dairies with prior mortality loss runs"],
-    faqs: [
-      { q: "Doesn't my farm-owner policy cover dead cattle?", a: "Barely. A standard farm policy covers buildings and liability and pays little or nothing for the death of an animal. Livestock mortality is the coverage that actually insures the herd against death from disease, accident, disaster, and theft." },
-      { q: "How are my cows valued under livestock mortality?", a: "Grade cattle are typically valued at a set market rate; registered, show, and high-genetic animals are scheduled individually on their merit. The difference at claim time can be enormous — which is why proper scheduling matters before a loss." },
-      { q: "What's the difference between full and named-peril mortality?", a: "Named-peril pays only for listed causes (fire, lightning, certain accidents). Full mortality covers death from almost any cause, including disease. Most dairies want full mortality on valuable milking cows and breeding stock." },
-      { q: "Is disease covered under livestock mortality?", a: "Under full (broad) mortality, yes — death from disease is covered subject to the policy terms and any health disclosures. Named-peril policies generally exclude disease, which is why high-value herds usually carry full mortality." },
-      { q: "Does mortality cover theft of animals?", a: "Yes — theft and, on some forms, mysterious disappearance of scheduled animals are covered perils under a full-mortality policy. Documentation and animal ID strengthen the claim." },
-      { q: "What do I need to document to insure the herd properly?", a: "Animal ID (tags or tattoos), breed, age, and value — and for registered stock, registration papers. Good records up front mean a mortality claim is paid quickly and at full value rather than disputed." },
-      { q: "Can you insure animals in transit or at a show?", a: "Yes. Transit and exhibition coverage can be added so animals are insured while being hauled or shown — common exposures for registered-stock and show operations." },
-    ],
-  },
-  "farm-property": {
-    heroBlurb: "All-risk farm property coverage for the dairy complex — freestall barns, milking parlors, commodity sheds, bunker and commodity silos, and feed storage — built for livestock and manure exposures and scheduled at replacement cost.",
-    whatsCovered: ["Freestall and tiestall barns, parlors, and holding areas", "Commodity sheds, bunkers, and commodity and bunker silos", "Feed storage structures and the feed and inventory inside them", "Shop, equipment, and outbuildings", "Business interruption during restoration after a covered loss", "Debris removal and rebuild after a barn fire"],
-    whoItsFor: ["Dairies with significant investment in barns and parlor infrastructure", "Operations with large feed and commodity storage", "Farms in wildfire, windstorm, or lightning-exposed regions", "Any dairy whose property is scheduled at actual cash value with depreciation"],
-    whyCca: ["Buildings and equipment scheduled at replacement cost — not ACV", "Livestock and manure exposure reflected in the underwriting — not a generic farm form", "Business interruption with a restoration period that fits specialty-equipment lead times"],
-    faqs: [
-      { q: "Why replacement cost instead of actual cash value?", a: "ACV pays today's depreciated value. A 20-year-old parlor valued at ACV might receive a fraction of its rebuild cost. For dairy infrastructure with long lead times, ACV leaves you dramatically underinsured after a fire." },
-      { q: "Does farm property cover barn fires?", a: "Yes — fire is a covered peril. The key add-ons are replacement cost (not ACV), debris removal, and business interruption with a restoration period that accounts for the time it takes to rebuild a parlor and restock." },
-      { q: "Are my feed and silos covered?", a: "Yes — feed inventory and the silos and commodity structures that hold it are scheduled under the property program. We value feed at its replacement cost so a spoiled or destroyed inventory doesn't become an uncovered loss." },
-      { q: "Does livestock and manure exposure change my property rate?", a: "It can. Livestock confinement and manure handling change the fire-loading and liability profile of a property. We document your housekeeping and handling so underwriters rate the real exposure — not a worst-case assumption." },
-      { q: "What happens to my income if the parlor burns down?", a: "Business interruption coverage replaces lost income during the restoration period. Because rebuilding a parlor and restocking takes time, we set a restoration period that fits dairy reality, not a generic 6-month default." },
-    ],
-  },
-  "equipment-spoilage": {
-    heroBlurb: "Covers mechanical or electrical breakdown of milking systems, plate coolers, bulk tanks, compressors, and chillers — plus the milk and product spoilage that follows when cooling or processing fails. Standard property excludes both.",
-    whatsCovered: ["Milking system and parlor equipment mechanical/electrical failure", "Bulk tank and plate cooler breakdown", "Compressor and chiller failure", "Milk and dairy product spoilage from equipment or power failure", "Boiler and pressure-vessel failure", "Cost to repair or replace failed equipment"],
-    whoItsFor: ["Any dairy that stores milk in a bulk tank (essentially all of them)", "Operations with significant investment in cooling and milking equipment", "Creameries and on-farm processors with refrigeration and processing equipment", "Dairies whose property policy excludes spoilage or equipment breakdown"],
-    whyCca: ["Equipment breakdown paired with a spoilage component — not one or the other", "Equipment scheduled at replacement cost with fast claim handling", "Coordinates with business interruption so downtime is covered too"],
-    faqs: [
-      { q: "Isn't equipment breakdown covered by my property policy?", a: "Standard property covers external causes — fire, wind, theft. It excludes internal mechanical or electrical failure (compressor burnout, motor failure, electrical fault). Equipment-breakdown coverage fills that gap." },
-      { q: "Is the spoiled milk covered if my chiller fails?", a: "Only with a spoilage component on the equipment-breakdown policy. Without it, a chiller or compressor failure that ruins a full bulk tank is an uncovered loss — and that's a significant dollar amount." },
-      { q: "What about spoilage from a power outage?", a: "Many equipment-breakdown/spoilage forms include utility-interruption coverage for spoilage caused by an off-premises power outage, subject to a time deductible. We confirm the off-premises power language so a grid outage doesn't become an uncovered loss." },
-      { q: "How fast is an equipment-breakdown claim paid?", a: "Fast — because on a dairy, downtime is measured in lost milk. We work with carriers that handle breakdown and spoilage claims quickly so you can repair or replace equipment and get back to milking." },
-      { q: "Does this cover the boiler or water heater?", a: "Yes — boiler and pressure-vessel coverage is typically part of the equipment-breakdown (boiler & machinery) form, along with the milking, cooling, and processing equipment." },
-    ],
-  },
-  "dairy-product-liability": {
-    heroBlurb: "Coverage for bodily injury or property damage from contaminated, mislabeled, or defective milk and dairy products after they leave your farm or creamery — including recall costs and defense when a foodborne-illness or adulteration claim is made.",
-    whatsCovered: ["Bodily illness from contaminated or adulterated milk and dairy product", "Property damage arising from a defective product", "Defense costs when named in a processor, retailer, or consumer lawsuit", "Recall costs when a batch must be retrieved", "Completed-operations coverage extending after delivery", "Coverage for direct-market, bottled, and value-added products"],
-    whoItsFor: ["Dairies that bottle, process, or make cheese, butter, or other products", "Raw-milk and herd-share operations", "Direct-market and on-farm retail sellers", "Any dairy that can be named in a downstream foodborne-illness chain"],
-    whyCca: ["We place dairy product liability with specialty food/ag markets — not generic carriers", "Combined GL + Product programs with unified limits available", "Recall expense included — not a costly add-on"],
-    faqs: [
-      { q: "Do I need product liability if I just ship to a co-op?", a: "Often yes. Even when a co-op or processor takes your milk, a foodborne-illness or adulteration claim can trace back to the farm. Product liability covers your defense and exposure in that chain." },
-      { q: "Isn't this covered by general liability?", a: "Standard GL often contains product exclusions or low sublimits for food products. Dedicated dairy product liability covers the food-safety exposure GL was never built for — including recall costs." },
-      { q: "Is raw milk or direct-market dairy covered?", a: "Yes — and it's especially important there. Raw-milk, herd-share, and direct-market operations carry higher product-liability exposure and need coverage that specifically addresses those sales channels." },
-      { q: "Does product liability cover a recall?", a: "With the right form, yes. Recall expense — retrieving a batch, notification, and lost product — is included in the product-liability programs we place, rather than a separate and costly endorsement." },
-      { q: "What limits should a dairy carry?", a: "It depends on your channels and volume. Direct-market and value-added producers typically need higher limits. We model your realistic worst-case exposure and size the limit — with umbrella above it for large operations." },
-    ],
-  },
   "general-liability": {
-    heroBlurb: "Third-party bodily injury and property damage protection for farm visitors, agri-tourism, deliveries, custom raising, and the day-to-day operations of running a working dairy.",
-    whatsCovered: ["Third-party bodily injury on the farm premises", "Visitor and tour injuries (with agri-tourism endorsement)", "Property damage caused during deliveries and hauling", "Custom heifer raising and contract operations", "Defense costs and legal fees", "Products-completed operations coverage"],
-    whoItsFor: ["Any dairy with visitors, vendors, and delivery operations", "Farms that host tours, events, or agri-tourism", "Operations that raise or handle cattle for others", "Dairies required to provide GL certificates to co-ops or buyers"],
-    whyCca: ["GL structured with products-completed operations for long claim tails", "Agri-tourism and visitor-liability endorsements when the public visits", "Coordinated with product and pollution liability so there are no gaps"],
+    heroBlurb: "General liability is the foundation of every industrial contractor's insurance program — covering third-party bodily injury and property damage from your operations in refineries, chemical plants, power plants, and major industrial facilities.",
+    whatsCovered: ["Third-party bodily injury at industrial project sites","Third-party property damage from your contracting operations","Completed operations — claims arising after project completion","Products liability for materials you supply","Defense costs for covered claims"],
+    whoItsFor: ["Mechanical contractors on refinery and chemical plant turnarounds","Electrical contractors on power plant and industrial facility projects","Civil contractors on industrial infrastructure","Process contractors on major facility construction and modification"],
+    whyCca: ["AI endorsements built for facility owner requirements — ISO CG 2010/2037, primary/non-contributory, waiver of subrogation","Completed operations coverage appropriate for industrial project durations","GL structured to work alongside CPL — no gaps in pollution-condition claims","Same-day certificate issuance with facility owner endorsement language"],
     faqs: [
-      { q: "Does GL cover farm tours and agri-tourism?", a: "Only with the right endorsement. Standard farm GL under-covers visitor injuries. If the public visits — tours, petting zoos, events — we add agri-tourism liability to cover those claims." },
-      { q: "Do I need separate GL for custom heifer raising?", a: "If you raise or handle cattle for others, your liability exposure expands and should be reflected in the GL. We make sure contract and custom operations are covered, not excluded as a 'business' the form didn't contemplate." },
-      { q: "How does GL coordinate with product and pollution liability?", a: "GL covers premises and operations; product liability covers the milk; pollution covers manure and runoff. We coordinate all three so there's no gap where a claim falls between policies — which is where most coverage disputes happen." },
+      { q: "What AI language do refinery owners require?", a: "Typically ISO CG 2010 (ongoing ops) and CG 2037 (completed ops), plus primary/non-contributory language and waiver of subrogation. Some operators have proprietary forms. We build what your clients require." },
+      { q: "What GL limits are standard for refinery work?", a: "$1M per occurrence / $2M aggregate is the baseline. Most major operators require $5M+ total capacity, which means umbrella coverage above $1M primary." },
+    ],
+  },
+  "professional-liability": {
+    heroBlurb: "Professional liability covers heavy industrial contractors who provide design-build services, engineering recommendations, or professional input — covering claims that your professional judgment caused a loss separate from physical damage claims.",
+    whatsCovered: ["Design-build specification failure claims","Engineering recommendation disputes","Process system design errors","Defense costs for professional service claims","Errors in professional specifications or drawings"],
+    whoItsFor: ["Process contractors providing design-build services","Mechanical and electrical engineers in contractor organizations","Design-build industrial contractors with professional service obligations","Any industrial contractor whose professional recommendations could be the basis of a claim"],
+    whyCca: ["Professional liability carriers experienced with industrial contractor professional risk","Coverage structured to complement GL — professional claims to E&O, physical damage claims to GL","Claims-made mechanics explained clearly including tail coverage options","Coverage limits scaled to project values and professional service scope"],
+    faqs: [
+      { q: "Does professional liability cover design-build industrial work?", a: "Yes. Professional liability is specifically designed for design-build contractors who provide professional services. The professional service component is covered by E&O; the construction work component is covered by GL." },
+      { q: "Is professional liability required by facility owners?", a: "Some major facility owners require E&O coverage for design-build and engineering contractors in addition to GL. We verify whether your specific project requires E&O when structuring your program." },
     ],
   },
   "workers-compensation": {
-    heroBlurb: "Coverage for the real injury patterns in dairy work — animal-handling and trampling injuries, parlor slip and crush injuries, equipment and PTO incidents, and chemical and manure-exposure claims. Proper class codes for dairy labor.",
-    whatsCovered: ["Medical treatment for on-the-job injuries", "Disability and lost-wage benefits for injured workers", "Animal-handling, trampling, and kick injuries", "Parlor slip, fall, and crush injuries", "Equipment, PTO, and skid-loader incidents", "Employers' liability (Part Two) protection"],
-    whoItsFor: ["Dairies with W-2 employees (required in most states)", "Milking and herd crews", "Feeding, field, and equipment operators", "Operations whose workers are misclassified under generic farm codes"],
-    whyCca: ["Class codes structured for actual dairy job categories", "High-hazard dairy labor reflected in the rating — not generic farm codes", "Fast claim handling so injured workers get care without dispute"],
+    heroBlurb: "Workers compensation for heavy industrial contractors covers the specific injury patterns of operating facility work — process chemical exposure, falls from elevated structures, electrical injuries, confined space incidents, and heavy equipment injuries.",
+    whatsCovered: ["Chemical exposure and occupational disease from operating facility environments","Falls from elevated structures, scaffolding, and work platforms in industrial facilities","Electrical injuries on power plant and industrial facility projects","Confined space incidents during vessel, tank, and process equipment work","Heavy equipment and machinery injuries on industrial project sites","Hearing loss from industrial facility equipment and tools"],
+    whoItsFor: ["Mechanical contractor crews working on refinery and chemical plant turnarounds","Electrical contractor crews working in power generation and industrial facilities","Civil contractor crews on industrial construction projects","Process contractor crews on major facility installations and modifications"],
+    whyCca: ["Carriers experienced with industrial facility operations — not generic construction WC","Correct class code placement for each specialty trade in each state","Experience modification management for industrial contractor safety programs","Multi-state WC coordination for contractors working across jurisdictions"],
     faqs: [
-      { q: "Is workers' comp required for dairy employees?", a: "In most states, yes — once you have employees, workers' comp is mandatory. Dairy work is high-hazard (animal handling, equipment, chemicals), making proper coverage essential for both your crew and your protection." },
-      { q: "What class codes apply to dairy workers?", a: "Dairies carry several — milking and herd workers, feeding and field crews, equipment operators, and office staff. Correct classification matters: wrong codes mean overpayment or undercoverage and audit surprises." },
-      { q: "Are animal-handling injuries covered?", a: "Yes — trampling, crushing, and kick injuries are common dairy workers' comp claims and are covered under a properly structured policy. We make sure high-hazard dairy labor is rated accurately." },
-      { q: "What if my workers are misclassified?", a: "Misclassification leads to premium disputes at audit and gaps in coverage. We assign class codes to your actual workflow so you're neither overpaying nor exposed when a claim happens." },
-      { q: "How are seasonal workers handled?", a: "Seasonal and H-2A labor still needs to be reflected in the policy. We structure the workers' comp to cover your actual seasonal payroll and crew size so an audit doesn't produce a surprise bill." },
+      { q: "What class codes apply to heavy industrial contractors?", a: "Classification depends on trade — pipe fitters, millwrights, electricians, boilermakers each have specific codes. Industrial facility work may carry different rates than general commercial work. We verify correct classification before binding." },
+      { q: "Does WC cover process chemical exposure in operating facilities?", a: "Yes. Workers comp covers occupational disease from process chemical exposure — toxic vapor inhalation, skin absorption of chemical materials, and related conditions from operating facility environments." },
     ],
   },
   "commercial-auto": {
-    heroBlurb: "Coverage for the milk tankers, feed and commodity trucks, pickups, tractors, and equipment you run on public roads — including hired and non-owned auto when employees use their own vehicles on dairy business.",
-    whatsCovered: ["Liability for at-fault accidents in milk tankers and feed trucks", "Physical damage to owned vehicles", "Hired and non-owned auto for employees", "Uninsured and underinsured motorist coverage", "Tractors and equipment in transit on public roads", "Loading and unloading liability"],
-    whoItsFor: ["Dairies with owned tankers, feed trucks, or pickups", "Operations hauling milk, feed, or equipment on public roads", "Farms whose employees drive personal vehicles on dairy business", "Operations whose 'farm auto' form excludes over-the-road use"],
-    whyCca: ["Over-the-road trucking exposure factored into the program", "Coordinates with inland marine for milk and feed in transit", "Fleet and single-vehicle programs available"],
+    heroBlurb: "Commercial auto for heavy industrial contractors covers your fleet of service vehicles, equipment transporters, and vehicles carrying tools and materials between major industrial project sites.",
+    whatsCovered: ["Liability coverage for your vehicle fleet","Physical damage for owned vehicles","Hired auto for rentals on major projects","Non-owned auto for crew members driving personal vehicles to project sites","Medical payments and uninsured motorist coverage"],
+    whoItsFor: ["Industrial contractors with service truck fleets visiting multiple facility sites","Contractors with equipment transporters moving specialty tools between major projects","Operations with DOT-regulated vehicles hauling industrial materials"],
+    whyCca: ["Fleet programs for multi-vehicle operations with volume pricing","DOT compliance guidance for regulated vehicles","Non-owned auto protection for facility crews using personal vehicles"],
     faqs: [
-      { q: "Is a milk tanker covered under farm auto or commercial auto?", a: "Vehicles used on public roads — including milk tankers and feed trucks — need commercial auto. Farm auto forms often limit or exclude over-the-road trucking. We place commercial auto and coordinate it with cargo/inland marine for the milk itself." },
-      { q: "What is hired and non-owned auto, and do I need it?", a: "It covers liability when employees drive their own vehicles (or rented vehicles) on dairy business. If anyone runs an errand or makes a delivery for the farm in a personal vehicle, you want this coverage." },
-      { q: "Is the milk in the tanker covered by auto?", a: "Auto covers the vehicle and liability. The milk itself is a cargo/inland marine matter. We coordinate both so the tanker and the load are both covered during transport." },
-      { q: "Are tractors on the road covered?", a: "Tractors and equipment driven on public roads can be covered under the commercial auto or a specialized farm-equipment provision. Slow-moving-vehicle exposure is factored into the program." },
+      { q: "Do I need commercial auto if my crews drive personal vehicles to project sites?", a: "Yes. Non-owned auto liability covers your business when employees have accidents driving personal vehicles on company business — including driving to and from industrial project sites." },
+      { q: "What if I rent equipment transport vehicles for major projects?", a: "Hired auto covers rented vehicles used in your contracting operations. We include hired and non-owned auto in standard industrial contractor auto programs." },
     ],
   },
-  "pollution-environmental": {
-    heroBlurb: "Covers the environmental exposure every dairy carries — manure storage and lagoon failure, nutrient and fertilizer runoff, fuel and chemical leaks, and the cleanup and third-party claims that follow a release into soil or water.",
-    whatsCovered: ["Manure storage and lagoon failure", "Nutrient, fertilizer, and agrichemical runoff", "Fuel, oil, and chemical leaks and spills", "Third-party bodily injury and property damage from a release", "Cleanup and remediation costs", "Defense costs for environmental claims"],
-    whoItsFor: ["Every dairy with manure storage or a lagoon (essentially all of them)", "Operations in water-quality-regulated or sensitive watershed areas", "Farms that store fuel, fertilizer, or agrichemicals", "Dairies whose standard GL excludes pollution (most do)"],
-    whyCca: ["Pollution coverage written specifically for dairies — not a generic extension", "We document your nutrient-management plan to support placement", "E&S market access for dairies declined over environmental exposure"],
+  "umbrella-excess": {
+    heroBlurb: "Petrochemical operators and major industrial facility owners routinely require $5M to $25M in total liability capacity. Umbrella and excess liability provides those limits above your primary GL and auto cost-effectively.",
+    whatsCovered: ["Additional limits above primary GL","Additional limits above commercial auto liability","Additional limits above employers liability (WC)","Defense costs above primary policy limits","Broader coverage where the umbrella drops down to fill primary gaps"],
+    whoItsFor: ["Industrial contractors working on refinery and chemical plant projects with high limit requirements","Contractors bidding on major public and private industrial facility projects","Established industrial contractors with significant revenue and project scale"],
+    whyCca: ["Umbrella and excess capacity to $25M and above for major industrial contractors","AI endorsements on umbrella for facility owners requiring umbrella AI","Umbrella structured to follow GL form — clear coverage coordination","Excess layers above umbrella for the highest capacity requirements"],
     faqs: [
-      { q: "Doesn't my general liability cover a manure spill?", a: "Almost never. Standard GL policies contain a pollution exclusion that removes coverage for the discharge of waste or chemicals. A manure lagoon failure or fertilizer runoff claim is excluded without dedicated environmental liability." },
-      { q: "What's the difference between sudden and gradual pollution coverage?", a: "Sudden coverage pays for an abrupt release (a lagoon breach, a fuel spill). Gradual (or non-sudden) coverage pays for slow releases like long-term nutrient runoff. Dairies usually want both — and many basic forms cover only sudden." },
-      { q: "Will my nutrient-management plan help me get coverage?", a: "Yes. A documented nutrient-management plan, lagoon inspection records, and good housekeeping are exactly what underwriters want to see — and they often improve both placement and pricing." },
-      { q: "What if a neighbor sues over runoff?", a: "Environmental liability covers third-party bodily injury and property damage from a release — including a neighbor's claim over contaminated water or runoff. Defense costs are included." },
-      { q: "Can you insure a dairy that was declined over a lagoon or runoff issue?", a: "Often yes. We have E&S environmental markets for dairies declined by standard carriers over lagoon age, water-quality violations, or location in a sensitive watershed." },
+      { q: "How much umbrella do refinery contractors need?", a: "Commonly $5M to $25M depending on the operator and project. Major refinery and chemical plant operators have specific requirements by project type. We structure umbrella to meet your largest anticipated requirement." },
+      { q: "Does the umbrella cover CPL claims?", a: "This depends on the umbrella form. Many umbrellas follow GL and have the same pollution exclusion. CPL handles pollution claims separately. We review coverage coordination to ensure no gaps." },
+    ],
+  },
+  "contractors-pollution-liability": {
+    heroBlurb: "Industrial contractors working in operating refineries and chemical plants face pollution exposures from the facility environment. CPL covers third-party claims arising from pollution conditions that GL excludes.",
+    whatsCovered: ["Third-party bodily injury from process chemical exposure","Property damage from pollution conditions in operating facility environments","Cleanup costs for contractor-related pollution events in industrial facilities","Defense costs for pollution-related claims","Transportation pollution incidents involving industrial materials"],
+    whoItsFor: ["Contractors working in operating petrochemical, chemical, and process facilities","Industrial contractors whose operations could create or contribute to pollution conditions","Any contractor working in environments classified as pollution-prone"],
+    whyCca: ["CPL structured for industrial facility contractor operations — broader than standard contractor CPL","Pollution coverage coordinated with GL to avoid gaps and overlaps","Facility operator certificate requirements met including CPL evidence","Higher limits available for contractors in major industrial facility environments"],
+    faqs: [
+      { q: "Is CPL required for refinery contractor work?", a: "Most major refinery and chemical plant operators require CPL from contractors who work inside their facilities. Even when not required, the pollution exclusion in GL makes CPL essential for industrial facility work." },
+      { q: "Does CPL cover exposure to facility process chemicals?", a: "Yes. CPL covers third-party bodily injury and property damage from pollution conditions, including exposure to process chemicals that your operations disturb or come into contact with." },
+    ],
+  },
+  "inland-marine": {
+    heroBlurb: "Your heavy industrial contractor tools, specialty equipment, and materials represent significant capital. An inland marine floater protects them at project sites, in transit, and at your yard.",
+    whatsCovered: ["Specialty tools and equipment at industrial project sites","Equipment in transit between major project sites","Tools and equipment at yard storage","Specialty instruments and testing equipment","Damage from theft, vandalism, and physical damage away from a fixed location"],
+    whoItsFor: ["Mechanical contractors with specialty piping and equipment tools","Electrical contractors with specialty testing and installation equipment","Industrial contractors with high-value specialty tools deployed at multiple sites"],
+    whyCca: ["Blanket coverage for fleets of tools without itemized scheduling","Transit coverage for equipment moving between industrial project sites","Replacement cost coverage — get paid to replace at current cost"],
+    faqs: [
+      { q: "Is my specialty equipment covered at a refinery project site?", a: "Yes — the inland marine floater covers equipment at industrial project sites, not just at your fixed location. This is essential for industrial contractors with equipment deployed at multiple active project sites." },
+      { q: "Does GL cover my own tools if they are damaged at a project site?", a: "No. GL covers third-party claims. Your own tools and equipment require separate inland marine coverage." },
+    ],
+  },
+  "builders-risk": {
+    heroBlurb: "For major industrial construction and turnaround projects, an installation floater or builders risk policy covers work in progress, staged materials, and installed equipment until project completion and owner acceptance.",
+    whatsCovered: ["Work in progress on major industrial construction projects","Materials and equipment staged at industrial project sites","Installed equipment before owner acceptance","Temporary structures and facilities at project sites","Damage from fire, theft, and other perils at industrial project locations"],
+    whoItsFor: ["Industrial contractors on major refinery or chemical plant construction projects","Mechanical contractors installing major process equipment","Any industrial contractor where work in progress and staged materials represent significant value before project acceptance"],
+    whyCca: ["Installation floater coverage that follows materials and work through project completion","Per-project or annual reporting forms for industrial contractor project profiles","Coverage designed for industrial construction material and equipment types"],
+    faqs: [
+      { q: "Is work in progress on a major industrial project covered by GL?", a: "No. GL covers third-party claims. Your own work in progress — installed equipment and materials before project acceptance — requires an installation floater or builders risk policy." },
+      { q: "Do facility owners require builders risk on major industrial projects?", a: "Sometimes. On major construction projects, facility owners often purchase project-level builders risk. But contractors may still need installation floaters for materials and work not covered by the owner's policy." },
     ],
   },
 };
 
-/* ============================================================
-   COVERAGE REGIONS — coverage page
-   ============================================================ */
 export const AZ_REGIONS = [
-  { name: "Wisconsin", note: "America's Dairyland — heritage and modern freestall dairies" },
-  { name: "California", note: "Central Valley — the largest dairy state by production" },
-  { name: "Pacific Northwest", note: "Oregon, Washington, Idaho — organic and pasture-based herds" },
-  { name: "Northeast & Mid-Atlantic", note: "NY, PA, VT, New England — registered stock and creameries" },
-  { name: "Upper Midwest", note: "Minnesota, Michigan, Iowa — family tie-stall to parlor operations" },
-  { name: "Texas & the Southwest", note: "TX, NM, AZ — large-herd desert dairies" },
-  { name: "U.S. Southeast", note: "FL, GA, the Carolinas — heat, storm, and high-rainfall exposure" },
-  { name: "Great Plains", note: "KS, NE, the Dakotas — herd, feed, and trucking operations" },
-];
+  { name: "Phoenix Metro", note: "Serving industrial contractors throughout greater Phoenix including Chandler, Mesa, Tempe, Scottsdale, and Gilbert." },
+  { name: "Tucson", note: "Industrial contractor programs for southern Arizona operations and border region projects." },
+  { name: "Flagstaff", note: "Coverage for northern Arizona industrial contractors on major utility and industrial projects." },
+  { name: "Yuma", note: "Industrial contractor insurance for western Arizona and regional industrial projects." },
+] as const;
 
 export const US_STATES = [
-  "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut",
-  "Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa",
-  "Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan",
-  "Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire",
-  "New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio",
-  "Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota",
-  "Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia",
-  "Wisconsin","Wyoming",
-];
+  "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
+  "Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky",
+  "Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi",
+  "Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico",
+  "New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+  "Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont",
+  "Virginia","Washington","West Virginia","Wisconsin","Wyoming",
+] as const;
 
 export const QUOTE_SERVICE_TYPES = [
-  "Livestock / Dairy Cattle Mortality",
-  "Farm Property & Buildings",
-  "Equipment Breakdown & Milk Spoilage",
-  "Dairy Product Liability",
   "General Liability Insurance",
+  "Professional Liability (E&O)",
   "Workers' Compensation",
-  "Commercial Auto / Trucking",
-  "Pollution / Environmental Liability",
-  "Full program / bundle (recommended)",
-  "Not sure — help me figure it out",
-];
+  "Commercial Auto",
+  "Umbrella / Excess Liability",
+  "Contractors Pollution Liability",
+  "Inland Marine / Equipment Floater",
+  "Builders Risk / Installation Floater",
+  "Full Program (Multiple Lines)",
+] as const;
 
 export const YEARS_OPTIONS = [
   "Less than 1 year",
-  "1–2 years",
-  "3–5 years",
-  "6–10 years",
+  "1-2 years",
+  "3-5 years",
+  "6-10 years",
   "10+ years",
-];
+] as const;

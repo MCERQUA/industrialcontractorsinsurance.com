@@ -1,18 +1,15 @@
-// Centralized site data — used across nav, footer, schema, CTAs
-// Dairy Insurance — dairy farm & dairy operations coverage
+// Industrial Contractors Insurance — heavy industrial contractors
 
 export const SITE = {
-  name: "Dairy Insurance",
-  legalName: "Dairy Insurance (by Contractors Choice Agency)",
-  domain: "dairy-insurance.com",
-  url: "https://dairy-insurance.com",
-  tagline: "Insurance for Dairy Farms & Dairy Operations",
+  name: "Industrial Contractors Insurance",
+  legalName: "Industrial Contractors Insurance (by Contractors Choice Agency)",
+  domain: "industrialcontractorsinsurance.com",
+  url: "https://industrialcontractorsinsurance.com",
+  tagline: "Insurance for Heavy Industrial Contractors",
   description:
-    "Specialized commercial insurance for dairy farms and dairy operations — dairy cattle & livestock mortality, milking parlors and barns, bulk-tank and chiller equipment breakdown with milk spoilage, dairy product liability, manure and runoff pollution, workers' comp, commercial auto for milk tankers, and crop/feed. Licensed all 50 states.",
+    "Specialty insurance for heavy industrial contractors — mechanical, electrical, civil, and process contractors working on refineries, chemical plants, power plants, and major industrial facilities. General liability, professional liability, workers compensation, commercial auto, and umbrella. Licensed all 50 states.",
   phone: "844-967-5247",
-  phoneAlt: "855-336-7189",
   phoneHref: "tel:+18449675247",
-  phoneAltHref: "tel:+18553367189",
   email: "josh@contractorschoiceagency.com",
   founded: 2005,
   npn: "8608479",
@@ -29,23 +26,25 @@ export const SITE = {
   statesLicensed: "All 50 states",
 } as const;
 
-// Niche nouns used in headings, metadata, and component copy
 export const BRAND = {
-  brandShort: "Dairy",
-  brandSub: "Farm Insurance",
-  nicheShort: "dairy farm",
-  nicheShortCap: "Dairy Farm",
-  nichePlural: "dairy farms",
-  nichePluralCap: "Dairy Farms",
-  operator: "dairy operation",
-  operatorCap: "Dairy Operation",
-  industry: "dairy farming",
-  industryCap: "Dairy Farming",
-  audience: "dairy producers",
-  audienceCap: "Dairy Producers",
-  ownerTitle: "dairy farmer",
-  regionPill: "Wisconsin · California · National",
-  serviceSuffix: "Dairy Farms",
+  brandShort: "Industrial Contractors",
+  brandSub: "Insurance",
+  tagline: "Insurance for Heavy Industrial Contractors",
+  subTagline: "GL, professional liability, workers comp, and umbrella for mechanical, electrical, civil, and process contractors",
+  nicheShort: "industrial contractor",
+  nicheShortCap: "Industrial Contractor",
+  nichePlural: "industrial contractors",
+  nichePluralCap: "Industrial Contractors",
+  operator: "industrial contractor",
+  operatorCap: "Industrial Contractor",
+  industry: "heavy industrial contracting",
+  industryCap: "Heavy Industrial Contracting",
+  audience: "industrial contractors",
+  audienceCap: "Industrial Contractors",
+  ownerTitle: "industrial contractor",
+  regionPill: "Refineries · Power Plants · Nationwide",
+  ctaMain: "Get an Industrial Contractor Quote",
+  ctaSecondary: "Talk to an Agent",
 } as const;
 
 export const NAV_LINKS = [
@@ -59,108 +58,181 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
   {
-    slug: "livestock-mortality",
-    title: "Dairy Cattle & Livestock Mortality",
-    short: "Protect the herd that drives your income",
-    description:
-      "The coverage that defines a dairy's risk. Insures your milking cows, heifers, calves, and registered breeding stock against death from accident, disease, theft, and disaster — including named peril and full-mortality options on high-value animals.",
-    icon: "Milk",
-    keywords: ["dairy cattle insurance", "livestock mortality insurance", "dairy cow mortality coverage", "cattle death loss insurance"],
-  },
-  {
-    slug: "farm-property",
-    title: "Farm Property & Buildings",
-    short: "Barns, milking parlors, silos & feed storage",
-    description:
-      "All-risk coverage for the dairy complex — freestall barns, milking parlors and holding areas, commodity sheds, commodity and bunker silos, feed storage, and the contents and inventory inside them. Built for livestock and manure exposures.",
-    icon: "Building2",
-    keywords: ["dairy farm property insurance", "barn insurance", "milking parlor coverage", "farm building insurance dairy"],
-  },
-  {
-    slug: "equipment-spoilage",
-    title: "Equipment Breakdown & Milk Spoilage",
-    short: "Milking systems, bulk tanks & chillers",
-    description:
-      "Covers mechanical or electrical breakdown of the equipment your operation depends on — milking systems, plate coolers, bulk tanks, compressors and chillers — plus the milk and product spoilage that follows when cooling or processing fails.",
-    icon: "Gauge",
-    keywords: ["dairy equipment breakdown insurance", "milk spoilage insurance", "bulk tank coverage", "chiller breakdown dairy"],
-  },
-  {
-    slug: "dairy-product-liability",
-    title: "Dairy Product Liability",
-    short: "For milk and dairy products you ship",
-    description:
-      "Coverage for bodily injury or property damage arising from contaminated, mislabeled, or defective milk and dairy products after they leave your farm or creamery — including recall costs and defense when a foodborne-illness or adulteration claim is made.",
-    icon: "FlaskConical",
-    keywords: ["dairy product liability insurance", "milk contamination insurance", "dairy recall coverage", "food liability dairy farm"],
-  },
-  {
     slug: "general-liability",
     title: "General Liability Insurance",
-    short: "Premises, agri-tourism & daily operations",
     description:
-      "Third-party bodily injury and property damage protection for farm visitors, farm tours and agri-tourism, deliveries, custom heifer raising, and the day-to-day operations of running a working dairy.",
+      "Core protection for heavy industrial contractors — covering third-party bodily injury and property damage arising from your contracting operations in refineries, chemical plants, power plants, and major industrial facilities.",
     icon: "ShieldCheck",
-    keywords: ["dairy farm general liability", "agritourism insurance", "farm premises liability", "dairy GL insurance"],
+  },
+  {
+    slug: "professional-liability",
+    title: "Professional Liability (E&O)",
+    description:
+      "Coverage for design-build contractors, mechanical and process engineers, and industrial contractors who provide professional services. Covers claims alleging errors in specifications, design, or professional recommendations.",
+    icon: "FileSignature",
   },
   {
     slug: "workers-compensation",
     title: "Workers' Compensation",
-    short: "For milking crews, feeders & herdsmen",
     description:
-      "Coverage for the real injury patterns in dairy work — animal-handling and trampling injuries, milking-parlor slip and crush injuries, equipment and PTO incidents, and chemical and manure-exposure claims. Proper class codes for dairy labor.",
+      "Coverage for the specific injury patterns of heavy industrial contractor crews — process chemical exposure, falls from elevated structures, electrical injuries, confined space incidents, and heavy equipment injuries on industrial project sites.",
     icon: "HardHat",
-    keywords: ["dairy workers compensation", "farm labor workers comp", "dairy worker injury insurance", "agricultural workers comp dairy"],
   },
   {
     slug: "commercial-auto",
-    title: "Commercial Auto & Trucking",
-    short: "Milk tankers, feed trucks & farm vehicles",
+    title: "Commercial Auto",
     description:
-      "Coverage for the milk tankers, feed and commodity trucks, pickup trucks, tractors, and equipment you run on public roads — including hired and non-owned auto when employees use their own vehicles on dairy business.",
+      "Fleet coverage for heavy industrial contractors — service trucks, equipment transporters, and vehicles carrying tools and materials to refinery, chemical plant, and power plant project sites across multiple states.",
     icon: "Truck",
-    keywords: ["dairy commercial auto", "milk tanker insurance", "feed truck insurance", "farm vehicle coverage dairy"],
   },
   {
-    slug: "pollution-environmental",
-    title: "Pollution & Environmental Liability",
-    short: "Manure, runoff & agrichemical exposure",
+    slug: "umbrella-excess",
+    title: "Umbrella / Excess Liability",
     description:
-      "Covers the environmental exposure every dairy carries — manure storage and lagoon failure, nutrient and fertilizer runoff, fuel and chemical leaks, and the cleanup and third-party claims that follow a release into soil or water.",
+      "Heavy industrial project owners — refineries, chemical plants, petrochemical operators — routinely require $5M to $25M in total liability capacity. Umbrella coverage provides those limits above your primary GL and auto cost-effectively.",
+    icon: "Umbrella",
+  },
+  {
+    slug: "contractors-pollution-liability",
+    title: "Contractors Pollution Liability",
+    description:
+      "Industrial contractors working in chemical, petrochemical, and process environments face pollution conditions from the facility itself and from contractor operations. CPL covers pollution-related third-party claims that GL excludes.",
     icon: "Droplets",
-    keywords: ["dairy pollution liability", "manure runoff insurance", "farm environmental liability", "agricultural pollution coverage dairy"],
+  },
+  {
+    slug: "inland-marine",
+    title: "Inland Marine / Equipment Floater",
+    description:
+      "Covers your heavy industrial contractor tools, equipment, and materials at project sites, in transit, and at your yard. Protects against theft, damage, and loss of equipment deployed across multiple active industrial project sites.",
+    icon: "Wrench",
+  },
+  {
+    slug: "builders-risk",
+    title: "Builders Risk / Installation Floater",
+    description:
+      "Covers industrial construction work in progress, installed materials and equipment, and staged materials at project sites for major industrial construction and turnaround projects until project completion and owner acceptance.",
+    icon: "Building2",
   },
 ] as const;
 
 export const LOCATIONS = [
-  { slug: "wisconsin", name: "Wisconsin", region: "America's Dairyland", blurb: "The heart of U.S. dairy. We insure Wisconsin operations from rotational-grazing herds in the Driftless Region to large modern freestall and parlor dairies — with class codes and markets built for Wisconsin dairy labor and manure regulations." },
-  { slug: "california", name: "California", region: "Central Valley · North Coast", blurb: "The largest dairy state by production. Coverage built for California's big-herd Central Valley dairies — water-quality and air-emissions exposure, large parlor equipment values, and the state's strict nutrient-management rules." },
-  { slug: "pacific-northwest", name: "Pacific Northwest", region: "Oregon · Washington · Idaho", blurb: "Pasture-based and confinement dairies across the PNW. Programs sized for organic and grass-fed herds, large feed inventories, and the wet-climate manure and runoff exposures of coastal and inland operations." },
-  { slug: "northeast", name: "Northeast & Mid-Atlantic", region: "NY · PA · VT · New England", blurb: "From New York and Pennsylvania to Vermont's organic creameries. Coverage for the region's smaller-herd, higher-value registered stock, bottling and on-farm processing, and seasonal pasture operations." },
-  { slug: "upper-midwest", name: "Upper Midwest", region: "Minnesota · Michigan · Iowa", blurb: "Heritage dairy country across the Upper Midwest. Programs for Minnesota, Michigan, and Iowa dairies — from family tie-stall barns to expanding parlor operations, with feed and forage coverage sized for cold-climate storage." },
-  { slug: "southwest", name: "Texas & the Southwest", region: "TX · NM · AZ", blurb: "Fast-growing Southwest dairy regions in the Texas Panhandle and New Mexico. Coverage for large-herd desert dairies — high water-use exposure, large lagoon systems, and feed and commodity operations under arid-climate conditions." },
-  { slug: "southeast", name: "U.S. Southeast", region: "Florida · Georgia · the Carolinas", blurb: "Southeast dairies facing heat-stress, hurricane, and high-rainfall manure exposures. Programs built for Florida, Georgia, and Carolina operations — including storm and flood-surge considerations for coastal and central dairies." },
-  { slug: "plains", name: "Great Plains", region: "Kansas · Nebraska · the Dakotas", blurb: "Plains-state dairies integrating with feed and forage operations. Coverage for Kansas, Nebraska, and Dakota dairies — herd mortality, large feed inventories, and the equipment and trucking exposure of expansive operations." },
+  {
+    slug: "texas",
+    name: "Texas",
+    state: "TX",
+    region: "Houston · Beaumont · Corpus Christi",
+    metaTitle: "Industrial Contractors Insurance Texas | TX Heavy Industrial Programs",
+    metaDescription: "Industrial contractor insurance in Texas — GL, workers comp, and umbrella for TX mechanical, electrical, civil, and process contractors on refineries and chemical plants.",
+    h1: "Industrial Contractors Insurance in Texas",
+    intro: "Texas is the largest market for heavy industrial contractors in the country — the Gulf Coast petrochemical corridor includes some of the largest refinery and chemical plant complexes in the world. Industrial contractors throughout Texas need insurance programs built for the specific liability, workers comp, and pollution exposures of petrochemical facility work.",
+  },
+  {
+    slug: "louisiana",
+    name: "Louisiana",
+    state: "LA",
+    region: "Baton Rouge · Lake Charles · New Orleans",
+    metaTitle: "Industrial Contractors Insurance Louisiana | LA Petrochemical Contractor Programs",
+    metaDescription: "Louisiana industrial contractor insurance — GL, CPL, and workers comp for LA mechanical, electrical, and civil contractors on refineries and chemical plants.",
+    h1: "Industrial Contractors Insurance in Louisiana",
+    intro: "Louisiana's concentration of petrochemical refineries, LNG facilities, and chemical plants along the Mississippi River and Gulf Coast creates sustained demand for heavy industrial contractors. We write specialty programs for Louisiana industrial contractors that address the specific liability and pollution exposures of petrochemical facility work.",
+  },
+  {
+    slug: "ohio",
+    name: "Ohio",
+    state: "OH",
+    region: "Cleveland · Columbus · Toledo",
+    metaTitle: "Industrial Contractors Insurance Ohio | OH Industrial Contractor Coverage",
+    metaDescription: "Ohio industrial contractor insurance — GL, workers comp, and umbrella for OH mechanical, electrical, and civil contractors on industrial facilities and power plants.",
+    h1: "Industrial Contractors Insurance in Ohio",
+    intro: "Ohio's heavy industrial base — steel, chemical, automotive, and power generation — creates significant demand for industrial contractors. We write programs for Ohio industrial contractors working on facility construction, maintenance turnarounds, and major industrial infrastructure projects throughout the state.",
+  },
+  {
+    slug: "pennsylvania",
+    name: "Pennsylvania",
+    state: "PA",
+    region: "Philadelphia · Pittsburgh · Allentown",
+    metaTitle: "Industrial Contractors Insurance Pennsylvania | PA Industrial Programs",
+    metaDescription: "Pennsylvania industrial contractor insurance — heavy industrial contractor GL, workers comp, and professional liability for PA contractors on industrial facilities.",
+    h1: "Industrial Contractors Insurance in Pennsylvania",
+    intro: "Pennsylvania's industrial heritage — steel, chemicals, pharmaceuticals, and power generation — continues to generate significant work for heavy industrial contractors. We write specialty programs for PA industrial contractors working on facility maintenance, construction, and major industrial project work.",
+  },
+  {
+    slug: "michigan",
+    name: "Michigan",
+    state: "MI",
+    region: "Detroit · Grand Rapids · Flint",
+    metaTitle: "Industrial Contractors Insurance Michigan | MI Industrial Contractor Programs",
+    metaDescription: "Michigan industrial contractor insurance — automotive manufacturing facility, power plant, and industrial contractor programs for MI contractors. GL, workers comp, and umbrella.",
+    h1: "Industrial Contractors Insurance in Michigan",
+    intro: "Michigan's automotive manufacturing base requires heavy industrial contractors for facility construction, maintenance, and process modifications. We write programs for Michigan industrial contractors working in automotive plants, power generation facilities, and major manufacturing operations.",
+  },
+  {
+    slug: "illinois",
+    name: "Illinois",
+    state: "IL",
+    region: "Chicago · Joliet · Rockford",
+    metaTitle: "Industrial Contractors Insurance Illinois | IL Industrial Contractor Coverage",
+    metaDescription: "Illinois industrial contractor insurance — Chicago-area refinery, chemical plant, and industrial facility programs for IL contractors. GL, workers comp, and CPL.",
+    h1: "Industrial Contractors Insurance in Illinois",
+    intro: "Illinois industrial contractors work on a dense concentration of refineries, chemical facilities, and major manufacturing plants — particularly in the Chicago metro and Illinois River corridor. We write specialty programs for IL industrial contractors that address the liability and workers comp exposures of heavy industrial project work.",
+  },
+  {
+    slug: "indiana",
+    name: "Indiana",
+    state: "IN",
+    region: "Indianapolis · Gary · Fort Wayne",
+    metaTitle: "Industrial Contractors Insurance Indiana | IN Industrial Contractor Programs",
+    metaDescription: "Indiana industrial contractor insurance — steel, chemical, and manufacturing facility programs for IN contractors. GL, workers comp, and umbrella.",
+    h1: "Industrial Contractors Insurance in Indiana",
+    intro: "Indiana's industrial base — steel production, chemical manufacturing, pharmaceutical, and automotive facilities — creates consistent demand for heavy industrial contractors. We write programs for Indiana industrial contractors on major industrial construction, maintenance, and turnaround work.",
+  },
+  {
+    slug: "california",
+    name: "California",
+    state: "CA",
+    region: "Los Angeles · San Francisco Bay · Central Valley",
+    metaTitle: "Industrial Contractors Insurance California | CA Industrial Programs",
+    metaDescription: "California industrial contractor insurance — refinery, power plant, and industrial facility programs for CA contractors. GL, CPL, professional liability, and workers comp.",
+    h1: "Industrial Contractors Insurance in California",
+    intro: "California's industrial contractors work in one of the most regulated operating environments in the country — California refinery rules, SCAQMD requirements, Cal/OSHA standards, and strict environmental regulations. We write programs for CA industrial contractors that address the specific compliance and liability requirements of California heavy industrial work.",
+  },
 ] as const;
 
 export const CREDENTIALS = [
   { label: "Licensed in all 50 states", icon: "MapPin" },
   { label: "Founded 2005 — 20+ years", icon: "CalendarCheck" },
-  { label: "Dairy-knowledgeable agents", icon: "HardHat" },
+  { label: "Heavy industrial specialists", icon: "HardHat" },
   { label: "15-minute quote turnaround", icon: "Timer" },
   { label: "2-hour claims response", icon: "Zap" },
   { label: "A.M. Best A+ carrier partners", icon: "Award" },
 ] as const;
 
+export const SOCIAL = { facebook: "", instagram: "", linkedin: "", twitter: "" } as const;
+
 export const STATS = [
-  { value: 240, suffix: "+", label: "Dairy operations insured nationwide", prefix: "" },
-  { value: 20, suffix: "+", label: "Years insuring farm operations", prefix: "" },
+  { value: 500, suffix: "+", label: "Industrial contractors insured nationwide", prefix: "" },
+  { value: 20, suffix: "+", label: "Years insuring specialty contractors", prefix: "" },
   { value: 15, suffix: " min", label: "Average quote turnaround", prefix: "" },
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
 
 export const TESTIMONIALS = [
-  { quote: "When we lost registered Jerseys in a barn fire, our old policy undervalued the herd and shorted us on the building. Dairy Insurance rebuilt the parlor at replacement cost and the livestock mortality actually reflected what those animals were worth. Night and day.", name: "Marlene S.", role: "Herd Owner", location: "Wisconsin" },
-  { quote: "A chiller failed overnight and we lost a full bulk tank. The equipment-breakdown and spoilage coverage paid the milk and the repair fast — no arguing about whether a compressor counts. They get that downtime and spoilage are the real costs on a dairy.", name: "Carl R.", role: "Operations Manager", location: "California" },
-  { quote: "Two carriers had declined us over manure-runoff and lagoon exposure. These folks understood our nutrient-management plan, documented it, and placed an A-rated environmental and property program. Real dairy knowledge, not a generic farm quote.", name: "Diane K.", role: "Co-op Member", location: "New York" },
+  {
+    quote: "We do mechanical contractor work in refineries and chemical plants across the Gulf Coast. The additional insured requirements, umbrella limits, and CPL are standard asks from every facility owner. Industrial Contractors Insurance put us with a carrier who understands petrochemical facility work — we get the certificates we need without the runaround.",
+    name: "Carlos M.",
+    role: "Owner, Gulf Mechanical Contractors",
+    location: "Texas",
+  },
+  {
+    quote: "We're a process contractor on major industrial turnarounds. The professional liability exposure from our design-build work is significant. CCA structured our E&O coverage specifically for process contractor risk — it covers our professional services, not just our physical work. That distinction matters.",
+    name: "Diana W.",
+    role: "President, Process Systems Inc.",
+    location: "Louisiana",
+  },
+  {
+    quote: "Workers comp for industrial contractor crews in operating facilities is a specialty. Our old carrier didn't understand the risk and we paid for it at audit every year. CCA got us with a carrier who understands heavy industrial operations — correct classification, accurate audit, and claims handled by people who know the industry.",
+    name: "Frank B.",
+    role: "Safety Director",
+    location: "Ohio",
+  },
 ] as const;

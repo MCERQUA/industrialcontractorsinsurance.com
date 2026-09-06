@@ -271,7 +271,7 @@ export const HOME_FAQS = [
   { q: "What is the minimum GL coverage for industrial facility work?", a: "Most facility owners require $1M to $2M per occurrence at minimum. Refinery and chemical plant operators often require $5M or more total — which means carrying a $1M primary GL plus a $4M or higher umbrella. We build the complete program around your specific client requirements." },
   { q: "How quickly can I get a quote?", a: "We target 15-minute turnarounds for standard industrial contractor programs. Complex multi-state operations or accounts with professional liability and umbrella requirements may take a few hours to properly market. Call 844-967-5247 for fastest service." },
   { q: "What does a complete industrial contractor insurance program cost?", a: "Program cost depends significantly on your operation — contractor type, annual revenue, crew size, states, and facility environments. A comprehensive program for a mid-size industrial contractor typically runs $20,000 to $75,000 annually across all lines. Call us for a specific quote." },
-  { q: "How do I contact Industrial Contractors Insurance?", a: "Call 844-967-5247 (Mon–Fri 8am–5pm MST), email josh@contractorschoiceagency.com, or submit the online quote form. We are at 12220 E Riggs Road, Suite #105, Chandler AZ 85249. NPN 8608479, licensed all 50 states." },
+  { q: "How do I contact Industrial Contractors Insurance?", a: "Call 844-967-5247 (Mon–Fri 8am–5pm MST), email josh@contractorschoiceagency.com, or submit the online quote form. We are at 12220 E Riggs Road, Suite #104, Chandler AZ 85249. NPN 8608479, licensed all 50 states." },
 ] as const;
 
 export const GENERAL_FAQS = [
@@ -286,7 +286,7 @@ export const GENERAL_FAQS = [
   { q: "Can you handle multi-state WC for industrial crews?", a: "Yes. We coordinate multi-state workers compensation programs as standard for industrial contractors who work across state lines and jurisdictions." },
   { q: "Do you insure union industrial contractors?", a: "Yes. We insure both union and non-union industrial contractors." },
   { q: "Phone number?", a: "844-967-5247, Monday through Friday 8am to 5pm Mountain Time." },
-  { q: "Office location?", a: "12220 E Riggs Road, Suite #105, Chandler, AZ 85249." },
+  { q: "Office location?", a: "12220 E Riggs Road, Suite #104, Chandler, AZ 85249." },
   { q: "Email?", a: "josh@contractorschoiceagency.com." },
   { q: "Can I get a quote online?", a: "Yes. Submit the quote form at industrialcontractorsinsurance.com/quote and we will respond within 15 minutes during business hours." },
 ] as const;

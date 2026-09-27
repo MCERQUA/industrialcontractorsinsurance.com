@@ -11,7 +11,7 @@ Run `pnpm run build` to verify (Next.js 15 app router). Target: GREEN.
 Next.js 15 · React 19 · TypeScript · Tailwind · `motion` · `lenis` · lucide-react · MDX blog.
 
 ## Design system
-"Fresh Pasture" — pasture green (#2F6B3E) primary, stream blue (#2E7BB5)
+"Fresh Pasture" — pasture green (#2F6B3E) primary, stream blue (#B45F2E)
 secondary, honey gold (#E0A82E) accent, warm milk-paper cream background.
 Headings: Fraunces (serif). Body: Inter. See `ai/research/design-system.md`.
 

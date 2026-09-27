@@ -10,10 +10,10 @@ Distinct identity for the dairy niche. Light/corporate palette (NOT dark).
 | `sand` | `#EEF2EA` | alt section background (soft sage) |
 | `clay` (primary) | `#2F6B3E` | pasture green — primary brand, buttons, nav |
 | `clay-dark` | `#21502E` | hover / deep green |
-| `sage` (secondary) | `#2E7BB5` | stream/sky blue — secondary accents |
+| `sage` (secondary) | `#B45F2E` | stream/sky blue — secondary accents |
 | `gold` (accent) | `#E0A82E` | honey gold — highlights, stars, badges |
-| `espresso` | `#1B2A22` | headings (deep green-charcoal) |
-| `cocoa` | `#44544A` | body text |
+| `espresso` | `#2D261D` | headings (deep green-charcoal) |
+| `cocoa` | `#574F46` | body text |
 | `mocha` | `#6E7B71` | muted text |
 | `adobe` | `#DCE6D8` | soft green borders |
 

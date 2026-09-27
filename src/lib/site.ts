@@ -216,23 +216,4 @@ export const STATS = [
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    quote: "We do mechanical contractor work in refineries and chemical plants across the Gulf Coast. The additional insured requirements, umbrella limits, and CPL are standard asks from every facility owner. Industrial Contractors Insurance put us with a carrier who understands petrochemical facility work — we get the certificates we need without the runaround.",
-    name: "Carlos M.",
-    role: "Owner, Gulf Mechanical Contractors",
-    location: "Texas",
-  },
-  {
-    quote: "We're a process contractor on major industrial turnarounds. The professional liability exposure from our design-build work is significant. CCA structured our E&O coverage specifically for process contractor risk — it covers our professional services, not just our physical work. That distinction matters.",
-    name: "Diana W.",
-    role: "President, Process Systems Inc.",
-    location: "Louisiana",
-  },
-  {
-    quote: "Workers comp for industrial contractor crews in operating facilities is a specialty. Our old carrier didn't understand the risk and we paid for it at audit every year. CCA got us with a carrier who understands heavy industrial operations — correct classification, accurate audit, and claims handled by people who know the industry.",
-    name: "Frank B.",
-    role: "Safety Director",
-    location: "Ohio",
-  },
-] as const;
+export const TESTIMONIALS: { quote: string; name: string; role: string; location: string }[] = [];

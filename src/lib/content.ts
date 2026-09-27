@@ -60,11 +60,6 @@ export const COPY = {
   process: {
     lead: "Getting industrial contractor insurance for petrochemical and heavy industrial work shouldn't be complicated. Our process is built to move fast.",
   },
-  testimonials: {
-    eyebrow: "What industrial contractors say",
-    h2Lead: "Trusted by Heavy Industrial",
-    h2Highlight: "Contractors Nationwide",
-  },
   finalCta: {
     h2Lead: "Ready to Protect Your",
     h2Highlight: "Industrial Contracting Business?",
